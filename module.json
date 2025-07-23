@@ -1,0 +1,48 @@
+{
+  "id": "foundryvtt-pf2e-merchant-maker",
+  "title": "PF2E Merchant Maker",
+  "description": "This FoundryVTT module allows for the quick creation of merchants for the Pathfinder 2nd Edition system.",
+  "version": "#{VERSION}#",
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "pf2e",
+        "type": "system",
+        "compatibility": {}
+      }
+    ]
+  },
+  "scripts": [
+    "scripts/pf2eMerchantMaker.js"
+  ],
+  "styles": [
+    "styles/pf2eMerchantMaker.css"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json",
+      "flags": {}
+    }
+  ],
+  "authors": [
+    {
+      "name": "HavocsCall",
+      "url": "https://github.com/HavocsCall",
+      "discord": "HavocsCall",
+      "flags": {}
+    }
+  ],
+  "url": "#{URL}#",
+  "manifest": "#{MANIFEST}#",
+  "download": "#{DOWNLOAD}#",
+  "readme": "README.md",
+  "license": "LICENSE",
+  "changelog": "CHANGELOG.md",
+  "flags": {}
+}

@@ -1,0 +1,46 @@
+{
+  "pf2eMerchantMaker": {
+    "name": "PF2E Merchant Maker",
+    "logging": {
+      "ready": "PF2E Merchant Maker | Module is ready"
+    },
+    "error": {
+      "noPack": "PF2E Merchant Maker | Equipment Compendium not found"
+    },
+    "settings": {
+      "addCriteriaSummary": {
+        "name": "Add Criteria Summary",
+        "hint": "If enabled, the merchant will include a summary of the criteria used to generate the merchant's inventory."
+      },
+      "closeOnSubmit": {
+        "name": "Close on Submit",
+        "hint": "If enabled, the merchant window will close after submitting the form. You will need to reload the form for the changes to take effect."
+      },
+      "itemPilesSetup": {
+        "name": "[Module] Item Piles Setup",
+        "hint": "If enabled, the created merchant will have my preferred base setup for the Item Piles module. This includes marking them as a Merchant, setting the quantity to infinite, setting the range to infinite, and setting the level column."
+      }
+    },
+    "window": {
+      "merchantName": "Merchant Name",
+      "merchantPlaceholder": "Enter Merchant Name",
+      "criteriaTip": "Tip: Hold <strong>Ctrl</strong> (or <strong>Cmd</strong> on Mac) to select multiple options. Hold <strong>Shift</strong> to select a range.",
+      "includeRarity": "Include Rarity",
+      "includeType": "Include Type",
+      "includeCategory": "Include Category",
+      "includeGroup": "Include Group",
+      "includeLevel": "Include Level",
+      "includeRange": "Include Range",
+      "includeTraits": "Include Traits",
+      "excludeRarity": "Exclude Rarity",
+      "excludeType": "Exclude Type",
+      "excludeCategory": "Exclude Category",
+      "excludeGroup": "Exclude Group",
+      "excludeLevel": "Exclude Level",
+      "excludeRange": "Exclude Range",
+      "excludeTraits": "Exclude Traits",
+      "submit": "Make Me a Merchant!",
+      "reset": "Reset Form"
+    }
+  }
+}

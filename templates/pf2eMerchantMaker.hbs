@@ -1,0 +1,140 @@
+<div>
+  <label for="merchantName">{{localize "pf2eMerchantMaker.window.merchantName"}}</label>
+  <input type="text" id="merchantName" name="merchantName" value="" placeholder="{{localize "pf2eMerchantMaker.window.merchantPlaceholder"}}"/>
+
+  <p class="criteria-instructions">
+    <em>{{{localize "pf2eMerchantMaker.window.criteriaTip"}}}</em>
+  </p>
+
+  <div class="criteria-row">
+    <div class="criteria-block">
+      <h3>{{localize "pf2eMerchantMaker.window.includeRarity"}}</h3>
+      <select name="include-rarity" id="include-rarity" multiple class="highlight-select">
+        {{#each criteria.rarity}}
+          <option value="{{this}}">{{this}}</option>
+        {{/each}}
+      </select>
+    </div>
+
+    <div class="criteria-block">
+      <h3>{{localize "pf2eMerchantMaker.window.includeType"}}</h3>
+      <select name="include-type" id="include-type" multiple class="highlight-select">
+        {{#each criteria.type}}
+          <option value="{{this}}">{{this}}</option>
+        {{/each}}
+      </select>
+    </div>
+
+    <div class="criteria-block">
+      <h3>{{localize "pf2eMerchantMaker.window.includeCategory"}}</h3>
+      <select name="include-category" id="include-category" multiple class="highlight-select">
+        {{#each criteria.category}}
+          <option value="{{this}}">{{this}}</option>
+        {{/each}}
+      </select>
+    </div>
+
+    <div class="criteria-block">
+      <h3>{{localize "pf2eMerchantMaker.window.includeGroup"}}</h3>
+      <select name="include-group" id="include-group" multiple class="highlight-select">
+        {{#each criteria.group}}
+          <option value="{{this}}">{{this}}</option>
+        {{/each}}
+      </select>
+    </div>
+
+    <div class="criteria-block">
+      <h3>{{localize "pf2eMerchantMaker.window.includeLevel"}}</h3>
+      <select name="include-level" id="include-level" multiple class="highlight-select">
+        {{#each criteria.level}}
+          <option value="{{this}}">{{this}}</option>
+        {{/each}}
+      </select>
+    </div>
+
+    <div class="criteria-block">
+      <h3>{{localize "pf2eMerchantMaker.window.includeRange"}}</h3>
+      <select name="include-range" id="include-range" multiple class="highlight-select">
+        {{#each criteria.range}}
+          <option value="{{this}}">{{this}}</option>
+        {{/each}}
+      </select>
+    </div>
+
+    <div class="criteria-block">
+      <h3>{{localize "pf2eMerchantMaker.window.includeTraits"}}</h3>
+      <select name="include-traits" id="include-traits" multiple class="highlight-select">
+        {{#each criteria.traits}}
+          <option value="{{this}}">{{this}}</option>
+        {{/each}}
+      </select>
+    </div>
+  </div>
+
+  <hr />
+
+  <div class="criteria-row">
+    <div class="criteria-block">
+      <h3>{{localize "pf2eMerchantMaker.window.excludeRarity"}}</h3>
+      <select name="exclude-rarity" id="exclude-rarity" multiple class="highlight-select">
+        {{#each criteria.rarity}}
+          <option value="{{this}}">{{this}}</option>
+        {{/each}}
+      </select>
+    </div>
+
+    <div class="criteria-block">
+      <h3>{{localize "pf2eMerchantMaker.window.excludeType"}}</h3>
+      <select name="exclude-type" id="exclude-type" multiple class="highlight-select">
+        {{#each criteria.type}}
+          <option value="{{this}}">{{this}}</option>
+        {{/each}}
+      </select>
+    </div>
+
+    <div class="criteria-block">
+      <h3>{{localize "pf2eMerchantMaker.window.excludeCategory"}}</h3>
+      <select name="exclude-category" id="exclude-category" multiple class="highlight-select">
+        {{#each criteria.category}}
+          <option value="{{this}}">{{this}}</option>
+        {{/each}}
+      </select>
+    </div>
+
+    <div class="criteria-block">
+      <h3>{{localize "pf2eMerchantMaker.window.excludeGroup"}}</h3>
+      <select name="exclude-group" id="exclude-group" multiple class="highlight-select">
+        {{#each criteria.group}}
+          <option value="{{this}}">{{this}}</option>
+        {{/each}}
+      </select>
+    </div>
+
+    <div class="criteria-block">
+      <h3>{{localize "pf2eMerchantMaker.window.excludeLevel"}}</h3>
+      <select name="exclude-level" id="exclude-level" multiple class="highlight-select">
+        {{#each criteria.level}}
+          <option value="{{this}}">{{this}}</option>
+        {{/each}}
+      </select>
+    </div>
+
+    <div class="criteria-block">
+      <h3>{{localize "pf2eMerchantMaker.window.excludeRange"}}</h3>
+      <select name="exclude-range" id="exclude-range" multiple class="highlight-select">
+        {{#each criteria.range}}
+          <option value="{{this}}">{{this}}</option>
+        {{/each}}
+      </select>
+    </div>
+
+    <div class="criteria-block">
+      <h3>{{localize "pf2eMerchantMaker.window.excludeTraits"}}</h3>
+      <select name="exclude-traits" id="exclude-traits" multiple class="highlight-select">
+        {{#each criteria.traits}}
+          <option value="{{this}}">{{this}}</option>
+        {{/each}}
+      </select>
+    </div>
+  </div>
+</div>
