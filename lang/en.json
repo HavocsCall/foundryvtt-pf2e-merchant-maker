@@ -19,6 +19,10 @@
       "itemPilesSetup": {
         "name": "[Module] Item Piles Setup",
         "hint": "If enabled, the created merchant will have my preferred base setup for the Item Piles module. This includes marking them as a Merchant, setting the quantity to infinite, setting the range to infinite, and setting the level column."
+      },
+      "toolbeltBetterMerchantSetup": {
+        "name": "[Module] PF2E Toolbelt - Better Merchant Setup",
+        "hint": "If enabled, the created merchant will have my preferred base setup for the PF2E Toolbelt - Better Merchant module. This includes making the infinite stock."
       }
     },
     "window": {

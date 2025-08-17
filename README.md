@@ -40,6 +40,8 @@ The items are sorted by Rarity > Level > Name.
 
 - Module Item Piles Setup - If enabled and you have the module [Item Piles: PF2E](https://github.com/mechamaya/itempiles-pf2e), this will set up the merchant with my preferred base settings. This includes marking them as a Merchant, setting the quantity to infinite, setting the range to infinite, and setting the level column.
 
+- Module PF2E Toolbelt Setup - If enabled and you have the module [PF2E Toolbelt](https://github.com/reonZ/pf2e-toolbelt), this will set up the merchant with my preferred base settings. This includes making the infinite stock.
+
 ## FAQ
 
 - All criteria values are pulled from the PF2E Equipment compendium. This means that all values are literal. One example is throwing weapons; in the system, they do not have a range, so they are considered melee weapons that have the thrown trait.

@@ -60,6 +60,18 @@ Hooks.on('init', () => {
             default: false
         });
     };
+
+    //---------- PF2E Toolbelt Better Merchant PF2E----------//
+    if (game.modules.get("pf2e-toolbelt")?.active) {
+        game.settings.register("foundryvtt-pf2e-merchant-maker", "toolbeltBetterMerchantSetup", {
+            name: game.i18n.localize("pf2eMerchantMaker.settings.toolbeltBetterMerchantSetup.name"),
+            hint: game.i18n.localize("pf2eMerchantMaker.settings.toolbeltBetterMerchantSetup.hint"),
+            scope: 'world',
+            config: true,
+            type: Boolean,
+            default: false
+        });
+    };
 });
 
 //----------------------------------------------------------------------------------------------------//
@@ -308,6 +320,7 @@ class pf2eLootMerchantMaker extends HandlebarsApplicationMixin(ApplicationV2) {
             criteriaSummary
         );
 
+        // ---------- Merchant Module Setups ----------//
         if (game.modules.get("itempiles-pf2e")?.active) {
             if (game.settings.get("foundryvtt-pf2e-merchant-maker", "itemPilesSetup")) {
                 newMerchant.setFlag("item-piles", "data", {
@@ -349,6 +362,14 @@ class pf2eLootMerchantMaker extends HandlebarsApplicationMixin(ApplicationV2) {
                     hideTokenWhenClosed: true,
                     distance: null,
                     enabled: true
+                });
+            }
+        };
+
+        if (game.modules.get("pf2e-toolbelt")?.active) {
+            if (game.settings.get("foundryvtt-pf2e-merchant-maker", "toolbeltBetterMerchantSetup")) {
+                newMerchant.setFlag("pf2e-toolbelt", "betterMerchant", {
+                    infiniteAll: true
                 });
             }
         };
