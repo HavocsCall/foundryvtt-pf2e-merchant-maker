@@ -1,7 +1,7 @@
 //----------------------------------------------------------------------------------------------------//
 //---------- Constants ----------//
 
-const DEBUG = true;
+const DEBUG = false;
 
 const CRITERIA_PATHS = {
     "category": item => item.system?.category,
