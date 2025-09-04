@@ -1,7 +1,7 @@
 //----------------------------------------------------------------------------------------------------//
 //---------- Constants ----------//
 
-const DEBUG = false;
+const DEBUG = true;
 
 const CRITERIA_PATHS = {
     "category": item => item.system?.category,
@@ -26,6 +26,21 @@ const SORT_FUNCTIONS = {
     range: (a, b) => a - b,
     default: (a, b) => String(a).localeCompare(String(b))
 };
+
+const EXCLUDE_CRITERIA_PATHS = {
+    "slug": item => item.system?.slug
+};
+
+const EXCLUDE_SLUGS = [
+    "bakuwa-lizardfolk-bony-plates",
+    "hardshell-surki-carapace",
+    "power-suit",
+    "reinforced-chassis",
+    "rite-of-reinforcement-exoskeleton",
+    "subterfuge-suit",
+    "titan-nagaji-scales",
+    "versatile-vial"
+];
 
 //----------------------------------------------------------------------------------------------------//
 //---------- Init Hook ----------//
@@ -229,6 +244,10 @@ class pf2eLootMerchantMaker extends HandlebarsApplicationMixin(ApplicationV2) {
 
         // ---------- Match Items Based on Criteria ----------//
         const unsortedMatches = items.filter(item => {
+            // ---------- Always Exclude Slugs ----------//
+            const slug = EXCLUDE_CRITERIA_PATHS.slug(item);
+            if (slug && EXCLUDE_SLUGS.includes(slug)) return false;
+
             // ---------- Include Criteria ----------//
             for (const [key, allowedValues] of Object.entries(included)) {
                 const value = CRITERIA_PATHS[key]?.(item);
