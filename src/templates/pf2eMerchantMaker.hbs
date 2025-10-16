@@ -1,0 +1,224 @@
+<div>
+  <!-- Merchant Name -->
+  <label for="merchantName">{{localize "pf2eMerchantMaker.window.merchantName"}}</label>
+  <input type="text" id="merchantName" name="merchantName" value="" placeholder="{{localize "pf2eMerchantMaker.window.merchantPlaceholder"}}"/>
+
+  <!-- Selection Tip -->
+  <p>
+    <em>{{{localize "pf2eMerchantMaker.window.criteriaTip"}}}</em>
+  </p>
+
+  <!-- Include Criteria -->
+  <div class="criteria-row">
+    <!-- Include Rarity -->
+    <div class="criteria-block">
+      <h5>{{localize "pf2eMerchantMaker.window.includeRarity"}}</h5>
+      <select name="include-rarity" id="include-rarity" multiple class="highlight-select">
+        {{#each criteria.rarity}}
+          <option value="{{this}}">{{this}}</option>
+        {{/each}}
+      </select>
+    </div>
+
+    <!-- Include Type -->
+    <div class="criteria-block">
+      <h5>{{localize "pf2eMerchantMaker.window.includeType"}}</h5>
+      <select name="include-type" id="include-type" multiple class="highlight-select">
+        {{#each criteria.type}}
+          <option value="{{this}}">{{this}}</option>
+        {{/each}}
+      </select>
+    </div>
+
+    <!-- Include Category -->
+    <div class="criteria-block">
+      <h5>{{localize "pf2eMerchantMaker.window.includeCategory"}}</h5>
+      <select name="include-category" id="include-category" multiple class="highlight-select">
+        {{#each criteria.category}}
+          <option value="{{this}}">{{this}}</option>
+        {{/each}}
+      </select>
+    </div>
+
+    <!-- Include Group -->
+    <div class="criteria-block">
+      <h5>{{localize "pf2eMerchantMaker.window.includeGroup"}}</h5>
+      <select name="include-group" id="include-group" multiple class="highlight-select">
+        {{#each criteria.group}}
+          <option value="{{this}}">{{this}}</option>
+        {{/each}}
+      </select>
+    </div>
+
+    <!-- Include Level -->
+    <div class="criteria-block">
+      <h5>{{localize "pf2eMerchantMaker.window.includeLevel"}}</h5>
+      <select name="include-level" id="include-level" multiple class="highlight-select">
+        {{#each criteria.level}}
+          <option value="{{this}}">{{this}}</option>
+        {{/each}}
+      </select>
+    </div>
+
+    <!-- Include Range -->
+    <div class="criteria-block">
+      <h5>{{localize "pf2eMerchantMaker.window.includeRange"}}</h5>
+      <select name="include-range" id="include-range" multiple class="highlight-select">
+        {{#each criteria.range}}
+          <option value="{{this}}">{{this}}</option>
+        {{/each}}
+      </select>
+    </div>
+
+    <!-- Include Traits -->
+    <div class="criteria-block">
+      <h5>{{localize "pf2eMerchantMaker.window.includeTraits"}}</h5>
+      <select name="include-traits" id="include-traits" multiple class="highlight-select">
+        {{#each criteria.traits}}
+          <option value="{{this}}">{{this}}</option>
+        {{/each}}
+      </select>
+    </div>
+  </div>
+
+  <hr />
+
+  <!-- Exclude Criteria -->
+  <div class="criteria-row">
+    <!-- Exclude Rarity -->
+    <div class="criteria-block">
+      <h5>{{localize "pf2eMerchantMaker.window.excludeRarity"}}</h5>
+      <select name="exclude-rarity" id="exclude-rarity" multiple class="highlight-select">
+        {{#each criteria.rarity}}
+          <option value="{{this}}">{{this}}</option>
+        {{/each}}
+      </select>
+    </div>
+
+    <!-- Exclude Type -->
+    <div class="criteria-block">
+      <h5>{{localize "pf2eMerchantMaker.window.excludeType"}}</h5>
+      <select name="exclude-type" id="exclude-type" multiple class="highlight-select">
+        {{#each criteria.type}}
+          <option value="{{this}}">{{this}}</option>
+        {{/each}}
+      </select>
+    </div>
+
+    <!-- Exclude Category -->
+    <div class="criteria-block">
+      <h5>{{localize "pf2eMerchantMaker.window.excludeCategory"}}</h5>
+      <select name="exclude-category" id="exclude-category" multiple class="highlight-select">
+        {{#each criteria.category}}
+          <option value="{{this}}">{{this}}</option>
+        {{/each}}
+      </select>
+    </div>
+
+    <!-- Exclude Group -->
+    <div class="criteria-block">
+      <h5>{{localize "pf2eMerchantMaker.window.excludeGroup"}}</h5>
+      <select name="exclude-group" id="exclude-group" multiple class="highlight-select">
+        {{#each criteria.group}}
+          <option value="{{this}}">{{this}}</option>
+        {{/each}}
+      </select>
+    </div>
+
+    <!-- Exclude Level -->
+    <div class="criteria-block">
+      <h5>{{localize "pf2eMerchantMaker.window.excludeLevel"}}</h5>
+      <select name="exclude-level" id="exclude-level" multiple class="highlight-select">
+        {{#each criteria.level}}
+          <option value="{{this}}">{{this}}</option>
+        {{/each}}
+      </select>
+    </div>
+
+    <!-- Exclude Range -->
+    <div class="criteria-block">
+      <h5>{{localize "pf2eMerchantMaker.window.excludeRange"}}</h5>
+      <select name="exclude-range" id="exclude-range" multiple class="highlight-select">
+        {{#each criteria.range}}
+          <option value="{{this}}">{{this}}</option>
+        {{/each}}
+      </select>
+    </div>
+
+    <!-- Exclude Traits -->
+    <div class="criteria-block">
+      <h5>{{localize "pf2eMerchantMaker.window.excludeTraits"}}</h5>
+      <select name="exclude-traits" id="exclude-traits" multiple class="highlight-select">
+        {{#each criteria.traits}}
+          <option value="{{this}}">{{this}}</option>
+        {{/each}}
+      </select>
+    </div>
+  </div>
+
+  <hr />
+
+  <!-- Options (now two columns, aligned with criteria rows) -->
+  <div class="criteria-row options-row">
+    <!-- Quantity Options Column -->
+    <div class="options-column">
+      <h5>{{localize "pf2eMerchantMaker.window.quantityOptions"}}</h5>
+      <p class="option-tip">{{localize "pf2eMerchantMaker.window.quantityTip"}}</p>
+
+      <div class="option-row">
+        <label for="quantity-mode-set">
+          <input type="radio" id="quantity-mode-set" name="quantity-mode" value="set" checked>
+          {{localize "pf2eMerchantMaker.window.setQuantity"}}
+        </label>
+        <input type="number" name="set-quantity" id="set-quantity" min="1" max="99" value="1">
+      </div>
+
+      <div class="option-row">
+        <label for="quantity-mode-random">
+          <input type="radio" id="quantity-mode-random" name="quantity-mode" value="random">
+          {{localize "pf2eMerchantMaker.window.randomQuantity"}}
+        </label>
+        <div class="range-inputs">
+          <input type="number" name="random-quantity-min" id="random-quantity-min" min="1" max="99" value="1">
+          <span class="range-sep">&ndash;</span>
+          <input type="number" name="random-quantity-max" id="random-quantity-max" min="1" max="99" value="10">
+        </div>
+      </div>
+      
+    </div>
+
+    <!-- Item Amount Options Column -->
+    <div class="options-column">
+      <h5>{{localize "pf2eMerchantMaker.window.itemAmounts"}}</h5>
+      <p class="option-tip">{{localize "pf2eMerchantMaker.window.amountTip"}}</p>
+
+      <div class="option-row">
+        <label for="amount-mode-all">
+          <input type="radio" id="amount-mode-all" name="amount-mode" value="all" checked>
+          {{localize "pf2eMerchantMaker.window.allAmount"}}
+        </label>
+      </div>
+
+      <div class="option-row">
+        <label for="amount-mode-set">
+          <input type="radio" id="amount-mode-set" name="amount-mode" value="set">
+          {{localize "pf2eMerchantMaker.window.setAmount"}}
+        </label>
+        <input type="number" name="set-amount" id="set-amount" min="1" value="1">
+      </div>
+
+      <div class="option-row">
+        <label for="amount-mode-random">
+          <input type="radio" id="amount-mode-random" name="amount-mode" value="random">
+          {{localize "pf2eMerchantMaker.window.randomAmount"}}
+        </label>
+        <div class="range-inputs">
+          <input type="number" name="random-amount-min" id="random-amount-min" min="1" value="1">
+          <span class="range-sep">&ndash;</span>
+          <input type="number" name="random-amount-max" id="random-amount-max" min="1" value="1">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

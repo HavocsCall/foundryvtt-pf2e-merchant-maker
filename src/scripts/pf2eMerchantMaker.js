@@ -1,7 +1,7 @@
 //----------------------------------------------------------------------------------------------------//
 //---------- Constants ----------//
 
-const DEBUG = false;
+const DEBUG = true;
 
 const CRITERIA_PATHS = {
     "category": item => item.system?.category,
@@ -32,20 +32,93 @@ const EXCLUDE_CRITERIA_PATHS = {
 };
 
 const EXCLUDE_SLUGS = [
+    "amulet-implement",
     "bakuwa-lizardfolk-bony-plates",
+    "bell-implement",
+    "chalice-implement",
     "hardshell-surki-carapace",
+    "lantern-implement",
+    "mirror-implement",
+    "orc-warmask",
     "power-suit",
+    "regalia-implement",
     "reinforced-chassis",
     "rite-of-reinforcement-exoskeleton",
+    "splendid-skull-mask",
     "subterfuge-suit",
     "titan-nagaji-scales",
-    "versatile-vial"
+    "tough-skin",
+    "tome-implement",
+    "versatile-vial",
+    "wand-implement"
 ];
 
-//----------------------------------------------------------------------------------------------------//
-//---------- Init Hook ----------//
+const QUANTITY_MIN = 1;
+const QUANTITY_MAX = 99;
+
+// ---------------------------------------------------------------------------------------------------- //
+// ---------- Utility Functions ---------- //
+
+const clampInteger = (value, min, max, fallback) => {
+    const parsed = Number(value);
+    if (!Number.isFinite(parsed)) return fallback;
+
+    const floored = Math.floor(parsed);
+    if (Number.isNaN(floored)) return fallback;
+
+    return Math.min(max, Math.max(min, floored));
+};
+
+const rollIntegerBetween = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
+
+const buildCriteriaSummary = (includedCriteria, excludedCriteria, quantityConfig, amountConfig, totalMatches) => {
+    const quantitySummary = quantityConfig.type === "random"
+        ? `Random (${quantityConfig.min}-${quantityConfig.max})`
+        : `Set (${quantityConfig.amount})`;
+
+    const itemsReturnedSummary = (() => {
+        if (amountConfig.type === "all") return "All";
+        if (amountConfig.type === "set") return `Set (${Math.min(amountConfig.count, totalMatches)})`;
+        return `Random (${amountConfig.min}-${amountConfig.max})`;
+    })();
+
+    return {
+        Included: includedCriteria,
+        Excluded: excludedCriteria,
+        Options: {
+            Quantity: quantitySummary,
+            "Items Returned": itemsReturnedSummary
+        }
+    };
+};
+
+const formatCriteriaSummary = summary => {
+    return Object.entries(summary)
+        .map(([section, values]) => {
+            const rows = Object.entries(values ?? {})
+                .filter(([, value]) => {
+                    if (Array.isArray(value)) return value.length > 0;
+                    return value !== undefined && value !== null && value !== "";
+                })
+                .map(([label, value]) => {
+                    const displayValue = Array.isArray(value) ? value.join(", ") : value;
+                    const formattedLabel = label.replace(/\b\w/g, char => char.toUpperCase());
+                    return `${formattedLabel}: ${displayValue}`;
+                });
+
+            if (rows.length === 0) return null;
+
+            return `<strong>${section}:</strong><br>${rows.join("<br>")}`;
+        })
+        .filter(Boolean)
+        .join("<br><br>");
+};
+
+// ---------------------------------------------------------------------------------------------------- //
+// ---------- Init Hook ---------- //
 
 Hooks.on('init', () => {
+    // ---------- Module Settings ---------- //
     game.settings.register("foundryvtt-pf2e-merchant-maker", "addCriteriaSummary", {
         name: game.i18n.localize("pf2eMerchantMaker.settings.addCriteriaSummary.name"),
         hint: game.i18n.localize("pf2eMerchantMaker.settings.addCriteriaSummary.hint"),
@@ -64,7 +137,7 @@ Hooks.on('init', () => {
         default: false
     });
 
-    //---------- Item Piles PF2E----------//
+    // ---------- Item Piles PF2E ---------- //
     if (game.modules.get("itempiles-pf2e")?.active) {
         game.settings.register("foundryvtt-pf2e-merchant-maker", "itemPilesSetup", {
             name: game.i18n.localize("pf2eMerchantMaker.settings.itemPilesSetup.name"),
@@ -76,7 +149,7 @@ Hooks.on('init', () => {
         });
     };
 
-    //---------- PF2E Toolbelt Better Merchant PF2E----------//
+    // ---------- PF2E Toolbelt Better Merchant PF2E ---------- //
     if (game.modules.get("pf2e-toolbelt")?.active) {
         game.settings.register("foundryvtt-pf2e-merchant-maker", "toolbeltBetterMerchantSetup", {
             name: game.i18n.localize("pf2eMerchantMaker.settings.toolbeltBetterMerchantSetup.name"),
@@ -89,11 +162,11 @@ Hooks.on('init', () => {
     };
 });
 
-//----------------------------------------------------------------------------------------------------//
-//---------- Ready Hook ----------//
+// ---------------------------------------------------------------------------------------------------- //
+// ---------- Ready Hook ---------- //
 
 Hooks.once('ready', async () => {
-    //---------- Get Items from Equipment Compendium ----------//
+    // ---------- Get Items from Equipment Compendium ---------- //
     const pack = game.packs.get("pf2e.equipment-srd");
 
     if (!pack) {
@@ -112,7 +185,7 @@ Hooks.once('ready', async () => {
         console.log("Sample Items:", sample);
     };
 
-    //---------- Build Empty Sets from CRITERIA_PATHS ----------//
+    // ---------- Build Empty Sets from CRITERIA_PATHS ---------- //
     const criteriaSets = Object.fromEntries(
         Object.keys(CRITERIA_PATHS).map(key => [key, new Set()])
     );
@@ -121,7 +194,7 @@ Hooks.once('ready', async () => {
         console.log("Empty Criteria Sets:", criteriaSets);
     };
 
-    //---------- Populate Criteria Sets from Items ----------//
+    // ---------- Populate Criteria Sets from Items ---------- //
     for (const item of items) {
         for (const [key, getValue] of Object.entries(CRITERIA_PATHS)) {
             const value = getValue(item);
@@ -137,7 +210,7 @@ Hooks.once('ready', async () => {
         console.log("Criteria Sets:", criteriaSets);
     };
 
-    //---------- Sort Criteria Sets ----------//
+    // ---------- Sort Criteria Sets ---------- //
     const criteria = Object.fromEntries(
         Object.entries(criteriaSets).map(([key, set]) => {
             const array = Array.from(set);
@@ -151,18 +224,18 @@ Hooks.once('ready', async () => {
         console.log("Sorted Criteria:", criteria);
     };
 
-    //---------- Store Data in Global Variables ----------//
+    // ---------- Store Data in Global Variables ---------- //
     window.items = items;
 
     window.criteria = criteria;
 
-    //---------- Ready ----------//
+    // ---------- Ready ---------- //
     console.log(game.i18n.localize("pf2eMerchantMaker.logging.ready"));
 });
 
 
-//----------------------------------------------------------------------------------------------------//
-//---------- Application ----------//
+// ---------------------------------------------------------------------------------------------------- //
+// ---------- Application ---------- //
 
 const { ApplicationV2, HandlebarsApplicationMixin } = foundry.applications.api;
 
@@ -185,7 +258,7 @@ class pf2eLootMerchantMaker extends HandlebarsApplicationMixin(ApplicationV2) {
     };
 
     static PARTS = {
-        form: { template: "modules/foundryvtt-pf2e-merchant-maker/templates/pf2eMerchantMaker.hbs" },
+        form: { template: "modules/foundryvtt-pf2e-merchant-maker/src/templates/pf2eMerchantMaker.hbs" },
         footer: { template: "templates/generic/form-footer.hbs" }
     };
 
@@ -202,18 +275,59 @@ class pf2eLootMerchantMaker extends HandlebarsApplicationMixin(ApplicationV2) {
         return context;
     }
 
-    //---------- Form Handler ----------//
+    // ---------- Form Handler ---------- //
     static async pf2eLootMerchantMakerFormHandler(event, form, formData) {
-        //---------- Get Selected Include and Exclude Data ----------//
+        // ---------- Get Form Data ---------- //
         const data = formData.object;
-        const merchantName = data.merchantName?.trim() ? data.merchantName : "New Merchant";
-        const items = window.items;
 
         if (DEBUG) {
             console.log("Form Data:", data);
         };
 
-        //---------- Get Selected Include and Exclude Data ----------//
+        // ---------- Quantity Options ---------- //
+        const quantityMode = data["quantity-mode"] ?? "set";
+        const randomQuantityMin = clampInteger(data["random-quantity-min"], QUANTITY_MIN, QUANTITY_MAX, QUANTITY_MIN);
+        const randomQuantityMax = clampInteger(data["random-quantity-max"], QUANTITY_MIN, QUANTITY_MAX, randomQuantityMin);
+        const quantityConfig = quantityMode === "random"
+            ? {
+                type: "random",
+                min: Math.min(randomQuantityMin, randomQuantityMax),
+                max: Math.max(randomQuantityMin, randomQuantityMax)
+            }
+            : {
+                type: "set",
+                amount: clampInteger(data["set-quantity"], QUANTITY_MIN, QUANTITY_MAX, QUANTITY_MIN)
+            };
+
+        const resolveQuantity = () => {
+            if (quantityConfig.type === "random") {
+                return rollIntegerBetween(quantityConfig.min, quantityConfig.max);
+            };
+
+            return quantityConfig.amount;
+        };
+
+        // ---------- Amount Options ---------- //
+        const amountMode = data["amount-mode"] ?? "all";
+        const randomAmountMin = clampInteger(data["random-amount-min"], 1, Number.MAX_SAFE_INTEGER, 1);
+        const randomAmountMax = clampInteger(data["random-amount-max"], 1, Number.MAX_SAFE_INTEGER, randomAmountMin);
+        const amountConfig = amountMode === "set"
+            ? {
+                type: "set",
+                count: clampInteger(data["set-amount"], 1, Number.MAX_SAFE_INTEGER, 1)
+            }
+            : amountMode === "random"
+                ? {
+                    type: "random",
+                    min: Math.min(randomAmountMin, randomAmountMax),
+                    max: Math.max(randomAmountMin, randomAmountMax)
+                }
+                : { type: "all" };
+
+        // ---------- Name ---------- //
+        const merchantName = data.merchantName?.trim() ? data.merchantName : "New Merchant";
+
+        // ---------- Include and Exclude ---------- //
         const included = {};
         const excluded = {};
 
@@ -229,7 +343,7 @@ class pf2eLootMerchantMaker extends HandlebarsApplicationMixin(ApplicationV2) {
             };
         };
 
-        //---------- Map Values as Needed ----------//
+        // ---------- Map Values as Needed ---------- //
         const numberKeys = ["level", "range"];
 
         for (const key of numberKeys) {
@@ -243,6 +357,9 @@ class pf2eLootMerchantMaker extends HandlebarsApplicationMixin(ApplicationV2) {
         };
 
         // ---------- Match Items Based on Criteria ----------//
+        // ---------- Items ---------- //
+        const items = window.items;
+
         const unsortedMatches = items.filter(item => {
             // ---------- Always Exclude Slugs ----------//
             const slug = EXCLUDE_CRITERIA_PATHS.slug(item);
@@ -279,7 +396,7 @@ class pf2eLootMerchantMaker extends HandlebarsApplicationMixin(ApplicationV2) {
             console.log("Unsorted Matches:", unsortedMatches);
         };
 
-        // ---------- Sort Matches by Rarity > Level > Name ----------//
+        // ---------- Sort Matches by Rarity > Level > Name ---------- //
         const sortedMatches = unsortedMatches.sort((a, b) => {
             const rarityA = CRITERIA_PATHS.rarity(a);
             const rarityB = CRITERIA_PATHS.rarity(b);
@@ -300,37 +417,83 @@ class pf2eLootMerchantMaker extends HandlebarsApplicationMixin(ApplicationV2) {
             console.log("Sorted Matches:", sortedMatches);
         };
 
-        // ---------- Create Merchant Actor with Sorted Items ----------//
-        const sortedMatchesObjects = sortedMatches.map(item => item.toObject());
+        // ---------- Limit Results Based on Amount Options ---------- //
+        const selectedMatches = (() => {
+            if (amountConfig.type === "set") {
+                const limit = Math.min(amountConfig.count, sortedMatches.length);
+                if (limit === 0) return [];
+                if (limit === sortedMatches.length) return [...sortedMatches];
 
-        const criteriaSummary = {
-            Included: included,
-            Excluded: excluded
+                const indices = new Set();
+
+                while (indices.size < limit) {
+                    indices.add(rollIntegerBetween(0, sortedMatches.length - 1));
+                };
+
+                return Array.from(indices)
+                    .sort((a, b) => a - b)
+                    .map(index => sortedMatches[index]);
+            };
+
+            if (amountConfig.type === "random") {
+                if (sortedMatches.length === 0) return [];
+
+                const upper = Math.min(amountConfig.max, sortedMatches.length);
+                const lower = Math.min(amountConfig.min, upper);
+                const target = rollIntegerBetween(lower, upper);
+                const indices = new Set();
+
+                while (indices.size < target) {
+                    indices.add(rollIntegerBetween(0, sortedMatches.length - 1));
+                };
+
+                return Array.from(indices)
+                    .sort((a, b) => a - b)
+                    .map(index => sortedMatches[index]);
+            };
+
+            return [...sortedMatches];
+        })();
+
+        if (DEBUG) {
+            console.log("Quantity Config:", quantityConfig);
+            console.log("Amount Config:", amountConfig);
+            console.log("Selected Matches:", selectedMatches);
         };
 
-        const systemData = {
+        // ---------- Create Merchant Actor with Selected Items ---------- //
+        const preparedItems = selectedMatches.map(item => {
+            const itemData = item.toObject();
+            itemData.system = itemData.system ?? {};
+            itemData.system.quantity = resolveQuantity();
+            return itemData;
+        });
+
+        const criteriaSummary = buildCriteriaSummary(
+            included,
+            excluded,
+            quantityConfig,
+            amountConfig,
+            sortedMatches.length
+        );
+
+        const actorSystemData = {
             lootSheetType: "Merchant"
         };
 
-        const formattedCriteriaForText = Object.entries(criteriaSummary)
-            .map(([section, values]) => {
-                return `<strong>${section}:</strong><br>` +
-                    Object.entries(values).map(([k, v]) =>
-                        `${k}: ${Array.isArray(v) ? v.join(", ") : v}`
-                    ).join("<br>");
-            }).join("<br><br>");
+        const formattedCriteriaSummary = formatCriteriaSummary(criteriaSummary);
 
-        if (game.settings.get("foundryvtt-pf2e-merchant-maker", "addCriteriaSummary")) {
-            systemData.details = {
-                description: `<div data-visibility="gm">${formattedCriteriaForText}</div>\n<hr />\n<p></p>\n`
+        if (game.settings.get("foundryvtt-pf2e-merchant-maker", "addCriteriaSummary") && formattedCriteriaSummary) {
+            actorSystemData.details = {
+                description: `<div data-visibility="gm">${formattedCriteriaSummary}</div>\n<hr />\n<p></p>\n`
             };
         };
 
         const newMerchant = await Actor.implementation.create({
             name: merchantName,
             type: "loot",
-            system: systemData,
-            items: sortedMatchesObjects
+            system: actorSystemData,
+            items: preparedItems
         });
 
         newMerchant.setFlag(

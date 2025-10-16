@@ -1,0 +1,797 @@
+{
+  "folder": "kkPqa1ghg5rDEdWC",
+  "name": "Shield Property Runes",
+  "type": "loot",
+  "ownership": {
+    "default": 1
+  },
+  "prototypeToken": {
+    "flags": {
+      "pf2e": {
+        "linkToActorSize": false,
+        "autoscale": false
+      }
+    },
+    "height": 1,
+    "width": 1,
+    "actorLink": true,
+    "sight": {
+      "enabled": false,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "name": "Shield Property Runes",
+    "displayName": 50,
+    "texture": {
+      "src": "icons/commodities/treasure/token-runed-circles-blue.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "offsetX": 0,
+      "offsetY": 0,
+      "fit": "contain",
+      "scaleX": 1,
+      "scaleY": 1,
+      "rotation": 0,
+      "tint": "#ffffff",
+      "alphaThreshold": 0.75
+    },
+    "lockRotation": true,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "displayBars": 20,
+    "bar1": {
+      "attribute": "attributes.hp"
+    },
+    "bar2": {
+      "attribute": null
+    },
+    "light": {
+      "negative": false,
+      "priority": 0,
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "color": null,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "detectionModes": [],
+    "occludable": {
+      "radius": 0
+    },
+    "ring": {
+      "enabled": false,
+      "colors": {
+        "ring": null,
+        "background": null
+      },
+      "effects": 0,
+      "subject": {
+        "scale": 1,
+        "texture": null
+      }
+    },
+    "turnMarker": {
+      "mode": 1,
+      "animation": null,
+      "src": null,
+      "disposition": false
+    },
+    "movementAction": null,
+    "randomImg": false,
+    "appendNumber": false,
+    "prependAdjective": false
+  },
+  "effects": [],
+  "system": {
+    "_migration": {
+      "version": 0.943,
+      "previous": {
+        "schema": 0.943,
+        "foundry": "13.348",
+        "system": "7.5.2"
+      }
+    },
+    "details": {
+      "description": "",
+      "level": {
+        "value": 0
+      }
+    },
+    "lootSheetType": "Merchant",
+    "hiddenWhenEmpty": false
+  },
+  "_id": "Mn3sJ9WVayway9ej",
+  "img": "icons/commodities/treasure/token-runed-circles-blue.webp",
+  "items": [
+    {
+      "img": "icons/commodities/treasure/token-runed-os-grey.webp",
+      "name": "Retaliation (Lesser)",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>Shields with a retaliation rune use the impact of weapons to generate blasts of explosive force that counterattack foes.</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">F</span> envision</p>\n<p><strong>Frequency</strong> once per hour</p>\n<p><strong>Trigger</strong> You Shield Block a melee Strike</p>\n<hr />\n<p><strong>Effect</strong> You unleash force damage against the creature that made the triggering attack. This attack deals @Damage[4d4[force]] (@Check[reflex|dc:20|basic]).</p>"
+        },
+        "rules": [],
+        "slug": "retaliation-lesser",
+        "_migration": {
+          "version": 0.943,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.943,
+            "foundry": "13.348",
+            "system": "7.5.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "magical"
+          ],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder Treasure Vault",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 6
+        },
+        "quantity": 99,
+        "baseItem": null,
+        "bulk": {
+          "value": 0
+        },
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "price": {
+          "value": {
+            "gp": 250
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "invested": null,
+          "handsHeld": 0,
+          "inSlot": false
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "applied-to-shield"
+        },
+        "subitems": []
+      },
+      "type": "equipment",
+      "_stats": {
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.slkvVyRBrUJyZQj8",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.348",
+        "systemId": "pf2e",
+        "systemVersion": "7.5.2",
+        "lastModifiedBy": null
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "UPnjMbTUnpLyKVOr": 3
+      },
+      "flags": {},
+      "_id": "H29WN4szUkP6Eert",
+      "_key": "!actors.items!Mn3sJ9WVayway9ej.H29WN4szUkP6Eert"
+    },
+    {
+      "img": "systems/pf2e/icons/equipment/runes/weapon-property-runes/weapon-property-runes.webp",
+      "name": "Catching",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>A <em>catching rune</em> creates a small, magical vacuum that attempts to pull weapons away from opponents. If you can attempt to @UUID[Compendium.pf2e.actionspf2e.Item.Dt6B1slsBy8ipJu9]{Disarm} as part of a Shield Block, such as with the Disarming Block feat or this rune's activated ability, a catching shield grants you a +1 circumstance bonus to such Disarm attempts.</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">F</span> envision</p>\n<p><strong>Frequency</strong> once per hour</p>\n<p><strong>Trigger</strong> You Shield Block a melee Strike made with a held weapon</p>\n<hr />\n<p><strong>Effect</strong> You attempt to Disarm the creature whose attack you blocked of the weapon they attacked you with. You can do so even if you don't have a hand free.</p>"
+        },
+        "rules": [],
+        "slug": "catching",
+        "_migration": {
+          "version": 0.943,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.943,
+            "foundry": "13.348",
+            "system": "7.5.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "magical"
+          ],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder Treasure Vault",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 8
+        },
+        "quantity": 99,
+        "baseItem": null,
+        "bulk": {
+          "value": 0
+        },
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "price": {
+          "value": {
+            "gp": 425
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "invested": null,
+          "handsHeld": 0,
+          "inSlot": false
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "applied-to-shield"
+        },
+        "subitems": []
+      },
+      "type": "equipment",
+      "_stats": {
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.OoYfDIq8VoVX38Ds",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.348",
+        "systemId": "pf2e",
+        "systemVersion": "7.5.2",
+        "lastModifiedBy": null
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "UPnjMbTUnpLyKVOr": 3
+      },
+      "flags": {},
+      "_id": "8BgLAR7aG1TnJrU6",
+      "_key": "!actors.items!Mn3sJ9WVayway9ej.8BgLAR7aG1TnJrU6"
+    },
+    {
+      "img": "icons/commodities/treasure/token-runed-os-grey.webp",
+      "name": "Retaliation (Moderate)",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>Shields with a retaliation rune use the impact of weapons to generate blasts of explosive force that counterattack foes.</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">F</span> envision</p>\n<p><strong>Frequency</strong> once per hour</p>\n<p><strong>Trigger</strong> You Shield Block a melee Strike</p>\n<hr />\n<p><strong>Effect</strong> You unleash force damage against the creature that made the triggering attack. This attack deals @Damage[8d4[force]] (@Check[reflex|dc:27|basic]).</p>"
+        },
+        "rules": [],
+        "slug": "retaliation-moderate",
+        "_migration": {
+          "version": 0.943,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.943,
+            "foundry": "13.348",
+            "system": "7.5.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "magical"
+          ],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder Treasure Vault",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 10
+        },
+        "quantity": 99,
+        "baseItem": null,
+        "bulk": {
+          "value": 0
+        },
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "price": {
+          "value": {
+            "gp": 1000
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "invested": null,
+          "handsHeld": 0,
+          "inSlot": false
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "applied-to-shield"
+        },
+        "subitems": []
+      },
+      "type": "equipment",
+      "_stats": {
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.vUXtEGa3eFLO5MCt",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.348",
+        "systemId": "pf2e",
+        "systemVersion": "7.5.2",
+        "lastModifiedBy": null
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "UPnjMbTUnpLyKVOr": 3
+      },
+      "flags": {},
+      "_id": "DoXz5k9fcSnpMMvu",
+      "_key": "!actors.items!Mn3sJ9WVayway9ej.DoXz5k9fcSnpMMvu"
+    },
+    {
+      "img": "icons/commodities/treasure/token-runed-os-grey.webp",
+      "name": "Retaliation (Greater)",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>Shields with a retaliation rune use the impact of weapons to generate blasts of explosive force that counterattack foes.</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">F</span> envision</p>\n<p><strong>Frequency</strong> once per hour</p>\n<p><strong>Trigger</strong> You Shield Block a melee Strike</p>\n<hr />\n<p><strong>Effect</strong> You unleash force damage against the creature that made the triggering attack. This attack deals @Damage[12d4[force]] (@Check[reflex|dc:31|basic]).</p>"
+        },
+        "rules": [],
+        "slug": "retaliation-greater",
+        "_migration": {
+          "version": 0.943,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.943,
+            "foundry": "13.348",
+            "system": "7.5.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "magical"
+          ],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder Treasure Vault",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 14
+        },
+        "quantity": 99,
+        "baseItem": null,
+        "bulk": {
+          "value": 0
+        },
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "price": {
+          "value": {
+            "gp": 4500
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "invested": null,
+          "handsHeld": 0,
+          "inSlot": false
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "applied-to-shield"
+        },
+        "subitems": []
+      },
+      "type": "equipment",
+      "_stats": {
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.pRgnCoqOntDqZchB",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.348",
+        "systemId": "pf2e",
+        "systemVersion": "7.5.2",
+        "lastModifiedBy": null
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "UPnjMbTUnpLyKVOr": 3
+      },
+      "flags": {},
+      "_id": "iepjvS6ejYmiFVln",
+      "_key": "!actors.items!Mn3sJ9WVayway9ej.iepjvS6ejYmiFVln"
+    },
+    {
+      "img": "icons/commodities/treasure/token-runed-os-grey.webp",
+      "name": "Retaliation (Major)",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>Shields with a retaliation rune use the impact of weapons to generate blasts of explosive force that counterattack foes.</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">F</span> envision</p>\n<p><strong>Frequency</strong> once per hour</p>\n<p><strong>Trigger</strong> You Shield Block a melee Strike</p>\n<hr />\n<p><strong>Effect</strong> You unleash force damage against the creature that made the triggering attack. This attack deals @Damage[16d4[force]] (@Check[reflex|dc:41|basic]).</p>"
+        },
+        "rules": [],
+        "slug": "retaliation-major",
+        "_migration": {
+          "version": 0.943,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.943,
+            "foundry": "13.348",
+            "system": "7.5.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "magical"
+          ],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder Treasure Vault",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 19
+        },
+        "quantity": 99,
+        "baseItem": null,
+        "bulk": {
+          "value": 0
+        },
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "price": {
+          "value": {
+            "gp": 40000
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "invested": null,
+          "handsHeld": 0,
+          "inSlot": false
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "applied-to-shield"
+        },
+        "subitems": []
+      },
+      "type": "equipment",
+      "_stats": {
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.XpS6X7QKtMQCVkdY",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.348",
+        "systemId": "pf2e",
+        "systemVersion": "7.5.2",
+        "lastModifiedBy": null
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "UPnjMbTUnpLyKVOr": 3
+      },
+      "flags": {},
+      "_id": "O8BaHGkpBJtjHx9b",
+      "_key": "!actors.items!Mn3sJ9WVayway9ej.O8BaHGkpBJtjHx9b"
+    },
+    {
+      "img": "icons/commodities/treasure/token-runed-os-grey.webp",
+      "name": "Spell Bastion",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>A <em>spell-bastion</em> rune creates a reservoir of eldritch energy within the shield. A spellcaster can spend 1 minute to @UUID[Compendium.pf2e.actionspf2e.Item.aBQ8ajvEBByv45yz]{Cast a Spell} of 3rd level or lower into the shield. The spell must take 2 actions or fewer to cast and must be able to target a creature other than the caster. The spell has no immediate effect-it's instead stored for later. When you invest a <em>spell-bastion</em> shield, you immediately know the name and level of the stored spell. A <em>spell-bastion</em> shield found as treasure has a 50% chance of having a spell of the GM's choice stored in it.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> envision</p>\n<p><strong>Requirements</strong> Your <em>spell-bastion</em> shield is storing a spell, and you have your shield raised</p>\n<hr />\n<p><strong>Effect</strong> You prepare to unleash the stored spell on any foe that hits you until your next turn.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">f</span> command</p>\n<p><strong>Requirements</strong> You have a spell stored in your <em>spell-bastion</em> shield, and you've activated the shield since your last turn in preparation for unleashing the spell</p>\n<p><strong>Trigger</strong> You use the @UUID[Compendium.pf2e.feats-srd.Item.jM72TjJ965jocBV8]{Shield Block} reaction against a foe that the stored spell can target</p>\n<hr />\n<p><strong>Effect</strong> You unleash the stored spell, which uses the target of the triggering attack as the target of the spell. This empties the spell from the shield and allows a spell to be cast into it again.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> command</p>\n<hr />\n<p><strong>Effect</strong> You harmlessly expend the stored spell. This frees the shield to have a new spell cast into it.</p>"
+        },
+        "rules": [],
+        "slug": "spell-bastion",
+        "_migration": {
+          "version": 0.943,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.943,
+            "foundry": "13.348",
+            "system": "7.5.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "magical"
+          ],
+          "rarity": "uncommon"
+        },
+        "publication": {
+          "title": "Pathfinder Lost Omens The Grand Bazaar",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 13
+        },
+        "quantity": 99,
+        "baseItem": null,
+        "bulk": {
+          "value": 0
+        },
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "price": {
+          "value": {
+            "gp": 2700
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "invested": null,
+          "handsHeld": 0,
+          "inSlot": false
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "applied-to-shield"
+        },
+        "subitems": []
+      },
+      "type": "equipment",
+      "_stats": {
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.adFsNoFwHnWuMgPm",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.348",
+        "systemId": "pf2e",
+        "systemVersion": "7.5.2",
+        "lastModifiedBy": null
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "UPnjMbTUnpLyKVOr": 3
+      },
+      "flags": {},
+      "_id": "uPSYr47quLTzFDBz",
+      "_key": "!actors.items!Mn3sJ9WVayway9ej.uPSYr47quLTzFDBz"
+    }
+  ],
+  "sort": 0,
+  "flags": {
+    "item-piles": {
+      "data": {
+        "enabled": true,
+        "type": "merchant",
+        "merchantColumns": [
+          {
+            "label": "Rarity",
+            "path": "system.traits.rarity",
+            "formatting": "{#}",
+            "buying": true,
+            "selling": true,
+            "mapping": {
+              "common": "PF2E.TraitCommon",
+              "uncommon": "PF2E.TraitUncommon",
+              "rare": "PF2E.TraitRare",
+              "unique": "PF2E.TraitUnique"
+            }
+          },
+          {
+            "label": "Level",
+            "path": "system.level.value",
+            "formatting": "{#}",
+            "mapping": {},
+            "buying": true,
+            "selling": true
+          },
+          {
+            "label": "Usage",
+            "path": "system.usage.value",
+            "formatting": "{#}",
+            "mapping": {
+              "applied-to-shield": "Shield"
+            },
+            "buying": true,
+            "selling": true
+          }
+        ]
+      },
+      "version": "3.2.15",
+      "sharing": {}
+    },
+    "pf2e-toolbelt": {
+      "betterMerchant": {
+        "infiniteAll": true
+      }
+    }
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.348",
+    "systemId": "pf2e",
+    "systemVersion": "7.5.2",
+    "createdTime": 1760023972900,
+    "modifiedTime": 1760023972900,
+    "lastModifiedBy": "UPnjMbTUnpLyKVOr"
+  },
+  "_key": "!actors!Mn3sJ9WVayway9ej"
+}

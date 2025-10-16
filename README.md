@@ -38,9 +38,9 @@ The items are sorted by Rarity > Level > Name.
 
 - Close on Submit - If enabled, when you click "Make me a Merchant," it will close the form. Otherwise, it will not close each time you make a new merchant. This is mostly used if you want to make a lot of merchants at once; you will want to leave this off.
 
-- Module Item Piles Setup - If enabled and you have the module [Item Piles: PF2E](https://github.com/mechamaya/itempiles-pf2e), this will set up the merchant with my preferred base settings. This includes marking them as a Merchant, setting the quantity to infinite, setting the range to infinite, and setting the level column.
+- Module Item Piles Setup - If enabled and you have the module [Item Piles: PF2e](https://github.com/mechamaya/itempiles-pf2e), this will set up the merchant with my preferred base settings. This includes marking them as a Merchant, setting the quantity to infinite, setting the range to infinite, and setting the level column.
 
-- Module PF2E Toolbelt Setup - If enabled and you have the module [PF2E Toolbelt](https://github.com/reonZ/pf2e-toolbelt), this will set up the merchant with my preferred base settings. This includes making the infinite stock.
+- Module PF2E Toolbelt Setup - If enabled and you have the module [PF2e Toolbelt](https://github.com/reonZ/pf2e-toolbelt), this will set up the merchant with my preferred base settings. This includes making the infinite stock.
 
 ## FAQ
 
@@ -56,6 +56,10 @@ Feel free to create an issue on [GitHub](https://github.com/HavocsCall/foundryvt
 - Add a specific "Melee" and "Ranged" option for weapons.
 - Make the window prettier.
 - Add an option for value ranges, like levels 0-5 instead of "0, 1, 2, 3, 4, 5." I'm not positive about this since there is the possibility that someone may want non-consecutive levels. That would require both the range and the selectable options. That might get confusing.
+
+## Special Thanks
+- Mecha Maya - For the [Item Piles: PF2e](https://github.com/mechamaya/itempiles-pf2e) module that make merchants better.
+- Idle - For the [PF2e Toolbelt](https://github.com/reonZ/pf2e-toolbelt) module that has the Better Merchant to make merchants better.
 
 ## AI Disclaimer
 

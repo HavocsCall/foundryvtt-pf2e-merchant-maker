@@ -1,0 +1,988 @@
+{
+  "name": "Armor Fundamental Runes",
+  "type": "loot",
+  "ownership": {
+    "default": 1
+  },
+  "prototypeToken": {
+    "flags": {
+      "pf2e": {
+        "linkToActorSize": false,
+        "autoscale": false
+      }
+    },
+    "height": 1,
+    "width": 1,
+    "actorLink": true,
+    "sight": {
+      "enabled": false,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "name": "Armor Fundamental Runes",
+    "displayName": 50,
+    "texture": {
+      "src": "icons/commodities/treasure/token-engraved-red-glowing.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "offsetX": 0,
+      "offsetY": 0,
+      "fit": "contain",
+      "scaleX": 1,
+      "scaleY": 1,
+      "rotation": 0,
+      "tint": "#ffffff",
+      "alphaThreshold": 0.75
+    },
+    "lockRotation": true,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "displayBars": 20,
+    "bar1": {
+      "attribute": "attributes.hp"
+    },
+    "bar2": {
+      "attribute": null
+    },
+    "light": {
+      "negative": false,
+      "priority": 0,
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "color": null,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "detectionModes": [],
+    "occludable": {
+      "radius": 0
+    },
+    "ring": {
+      "enabled": false,
+      "colors": {
+        "ring": null,
+        "background": null
+      },
+      "effects": 0,
+      "subject": {
+        "scale": 1,
+        "texture": null
+      }
+    },
+    "turnMarker": {
+      "mode": 1,
+      "animation": null,
+      "src": null,
+      "disposition": false
+    },
+    "movementAction": null,
+    "randomImg": false,
+    "appendNumber": false,
+    "prependAdjective": false
+  },
+  "effects": [],
+  "system": {
+    "_migration": {
+      "version": 0.943,
+      "previous": {
+        "schema": 0.943,
+        "foundry": "13.348",
+        "system": "7.5.2"
+      }
+    },
+    "details": {
+      "description": "",
+      "level": {
+        "value": 0
+      }
+    },
+    "lootSheetType": "Merchant",
+    "hiddenWhenEmpty": false
+  },
+  "_id": "jDJzuPl6O12Um51w",
+  "img": "icons/commodities/treasure/token-engraved-red-glowing.webp",
+  "items": [
+    {
+      "img": "systems/pf2e/icons/equipment/runes/fundamental-armor-runes/armor-potency.webp",
+      "name": "Armor Potency (+1)",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>Magic wards deflect attacks. Increase the armor's item bonus to AC by 1. The armor can be etched with one property rune.</p>\n<p>You can upgrade the <em>armor potency</em> rune already etched on a suit of armor using the normal process for upgrading items and runes.</p>\n<p><strong>Craft Requirements</strong> You are an expert in Crafting.</p>"
+        },
+        "rules": [],
+        "slug": "armor-potency-1",
+        "_migration": {
+          "version": 0.943,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.943,
+            "foundry": "13.348",
+            "system": "7.5.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "magical"
+          ],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder GM Core",
+          "authors": "",
+          "license": "ORC",
+          "remaster": true
+        },
+        "level": {
+          "value": 5
+        },
+        "quantity": 99,
+        "baseItem": null,
+        "bulk": {
+          "value": 0
+        },
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "price": {
+          "value": {
+            "gp": 160
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "invested": null
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "etched-onto-armor"
+        },
+        "subitems": []
+      },
+      "type": "equipment",
+      "_stats": {
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.Ro3g2JpJXrKXVyEr",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.348",
+        "systemId": "pf2e",
+        "systemVersion": "7.5.2",
+        "lastModifiedBy": null
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0,
+        "UPnjMbTUnpLyKVOr": 3
+      },
+      "flags": {},
+      "_id": "mzWaDePzRMMA13nN",
+      "_key": "!actors.items!jDJzuPl6O12Um51w.mzWaDePzRMMA13nN"
+    },
+    {
+      "img": "systems/pf2e/icons/equipment/runes/fundamental-armor-runes/armor-potency.webp",
+      "name": "Armor Potency (+2)",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>Magic wards deflect attacks. Increase the armor's item bonus to AC by 2. The armor can be etched with two property runes.</p>\n<p>You can upgrade the <em>armor potency</em> rune already etched on a suit of armor using the normal process for upgrading items and runes.</p>\n<p><strong>Craft Requirements</strong> You are an master in Crafting.</p>"
+        },
+        "rules": [],
+        "slug": "armor-potency-2",
+        "_migration": {
+          "version": 0.943,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.943,
+            "foundry": "13.348",
+            "system": "7.5.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "magical"
+          ],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder GM Core",
+          "authors": "",
+          "license": "ORC",
+          "remaster": true
+        },
+        "level": {
+          "value": 11
+        },
+        "quantity": 99,
+        "baseItem": null,
+        "bulk": {
+          "value": 0
+        },
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "price": {
+          "value": {
+            "gp": 1060
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "invested": null
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "etched-onto-armor"
+        },
+        "subitems": []
+      },
+      "type": "equipment",
+      "_stats": {
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.4Hb8tvvWFtykbZhG",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.348",
+        "systemId": "pf2e",
+        "systemVersion": "7.5.2",
+        "lastModifiedBy": null
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0,
+        "UPnjMbTUnpLyKVOr": 3
+      },
+      "flags": {},
+      "_id": "VyaIn0nhRiIpUZkw",
+      "_key": "!actors.items!jDJzuPl6O12Um51w.VyaIn0nhRiIpUZkw"
+    },
+    {
+      "img": "systems/pf2e/icons/equipment/runes/fundamental-armor-runes/armor-potency.webp",
+      "name": "Armor Potency (+3)",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>Magic wards deflect attacks. Increase the armor's item bonus to AC by 3. The armor can be etched with three property runes.</p>\n<p>You can upgrade the <em>armor potency</em> rune already etched on a suit of armor using the normal process for upgrading items and runes.</p>\n<p><strong>Craft Requirements</strong> You are an legendary in Crafting.</p>"
+        },
+        "rules": [],
+        "slug": "armor-potency-3",
+        "_migration": {
+          "version": 0.943,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.943,
+            "foundry": "13.348",
+            "system": "7.5.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "magical"
+          ],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder GM Core",
+          "authors": "",
+          "license": "ORC",
+          "remaster": true
+        },
+        "level": {
+          "value": 18
+        },
+        "quantity": 99,
+        "baseItem": null,
+        "bulk": {
+          "value": 0
+        },
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "price": {
+          "value": {
+            "gp": 20560
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "invested": null
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "etched-onto-armor"
+        },
+        "subitems": []
+      },
+      "type": "equipment",
+      "_stats": {
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.6ELjUFY0sEJ7nZlZ",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.348",
+        "systemId": "pf2e",
+        "systemVersion": "7.5.2",
+        "lastModifiedBy": null
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 400000,
+      "ownership": {
+        "default": 0,
+        "UPnjMbTUnpLyKVOr": 3
+      },
+      "flags": {},
+      "_id": "LEdyqzOrmpPzBJDO",
+      "_key": "!actors.items!jDJzuPl6O12Um51w.LEdyqzOrmpPzBJDO"
+    },
+    {
+      "img": "systems/pf2e/icons/equipment/runes/fundamental-armor-runes/armor-potency.webp",
+      "name": "Mythic Armor Potency",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>This armor is etched with a mythical ward providing unparalleled defense. Increase the armor's item bonus to AC by 4, and the armor can be etched with four property runes.</p><hr /><p><strong>Activate—Survive Devastation</strong> <span class=\"action-glyph\">r</span> (concentration)</p>\n<p><strong>Trigger</strong> An enemy critically succeeds against you with a weapon or unarmed Strike</p>\n<p><strong>Effect</strong> Spend a Mythic Point; if the triggering Strike was made by a mythic creature, it's a normal success instead. If it was made by a non-mythic creature, it's a failure.</p><hr /><p><strong>Craft Requirements</strong> <em>Mythic armor potency</em> runes can only be crafted, etched, or transferred by a mythic character capable of making a Crafting check at mythic proficiency (such as by having the Artisan's Calling).</p>"
+        },
+        "rules": [],
+        "slug": "mythic-armor-potency",
+        "_migration": {
+          "version": 0.943,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.943,
+            "foundry": "13.348",
+            "system": "7.5.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "magical",
+            "mythic"
+          ],
+          "rarity": "rare"
+        },
+        "publication": {
+          "title": "Pathfinder War of Immortals",
+          "authors": "",
+          "license": "ORC",
+          "remaster": true
+        },
+        "level": {
+          "value": 20
+        },
+        "quantity": 99,
+        "baseItem": null,
+        "bulk": {
+          "value": 0
+        },
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "price": {
+          "value": {
+            "gp": 70000
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "invested": null
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "etched-onto-armor"
+        },
+        "subitems": []
+      },
+      "type": "equipment",
+      "_stats": {
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.fJKwvqNEkHPChfrR",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.348",
+        "systemId": "pf2e",
+        "systemVersion": "7.5.2",
+        "lastModifiedBy": null
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 650000,
+      "ownership": {
+        "default": 0,
+        "UPnjMbTUnpLyKVOr": 3
+      },
+      "flags": {},
+      "_id": "t3SGBemFwSeLn8ln",
+      "_key": "!actors.items!jDJzuPl6O12Um51w.t3SGBemFwSeLn8ln"
+    },
+    {
+      "img": "systems/pf2e/icons/equipment/runes/fundamental-armor-runes/armor-potency.webp",
+      "name": "Resilient",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p><em>Resilient</em> runes imbue armor with additional protective magic. This grants the wearer a +1 item bonus to saving throws.</p>\n<p>You can upgrade the <em>resilient</em> rune already etched on a suit of armor using the normal process for upgrading items and runes.</p>"
+        },
+        "rules": [],
+        "slug": "resilient",
+        "_migration": {
+          "version": 0.943,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.943,
+            "foundry": "13.348",
+            "system": "7.5.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "magical"
+          ],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder GM Core",
+          "authors": "",
+          "license": "ORC",
+          "remaster": true
+        },
+        "level": {
+          "value": 8
+        },
+        "quantity": 99,
+        "baseItem": null,
+        "bulk": {
+          "value": 0
+        },
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "price": {
+          "value": {
+            "gp": 340
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "invested": null
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "etched-onto-armor"
+        },
+        "subitems": []
+      },
+      "type": "equipment",
+      "_stats": {
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.eSjQgsl3pYkirOwk",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.348",
+        "systemId": "pf2e",
+        "systemVersion": "7.5.2",
+        "lastModifiedBy": null
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0,
+        "UPnjMbTUnpLyKVOr": 3
+      },
+      "flags": {},
+      "_id": "uQCVvtvgX4HAhTQN",
+      "_key": "!actors.items!jDJzuPl6O12Um51w.uQCVvtvgX4HAhTQN"
+    },
+    {
+      "img": "systems/pf2e/icons/equipment/runes/fundamental-armor-runes/armor-potency.webp",
+      "name": "Resilient (Greater)",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p><em>Resilient</em> runes imbue armor with additional protective magic. This grants the wearer a +2 item bonus to saving throws.</p>\n<p>You can upgrade the <em>resilient</em> rune already etched on a suit of armor using the normal process for upgrading items and runes.</p>"
+        },
+        "rules": [],
+        "slug": "resilient-greater",
+        "_migration": {
+          "version": 0.943,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.943,
+            "foundry": "13.348",
+            "system": "7.5.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "magical"
+          ],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder GM Core",
+          "authors": "",
+          "license": "ORC",
+          "remaster": true
+        },
+        "level": {
+          "value": 14
+        },
+        "quantity": 99,
+        "baseItem": null,
+        "bulk": {
+          "value": 0
+        },
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "price": {
+          "value": {
+            "gp": 3440
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "invested": null
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "etched-onto-armor"
+        },
+        "subitems": []
+      },
+      "type": "equipment",
+      "_stats": {
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.fCdcyCkGlmp0c34A",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.348",
+        "systemId": "pf2e",
+        "systemVersion": "7.5.2",
+        "lastModifiedBy": null
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 350000,
+      "ownership": {
+        "default": 0,
+        "UPnjMbTUnpLyKVOr": 3
+      },
+      "flags": {},
+      "_id": "a1natyqE6YpzdiLY",
+      "_key": "!actors.items!jDJzuPl6O12Um51w.a1natyqE6YpzdiLY"
+    },
+    {
+      "img": "systems/pf2e/icons/equipment/runes/fundamental-armor-runes/armor-potency.webp",
+      "name": "Mythic Resilient",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p><em>Mythic resilient</em> runes imbue armor with unrivaled protection from a wide array of effects. The armor grants a +4 item bonus to saving throws to the wearer.</p><hr /><p><strong>Activate—Defy Obliteration</strong> <span class=\"action-glyph\">r</span> (concentration)</p>\n<p><strong>Trigger</strong> You critically fail a saving throw</p>\n<p><strong>Effect</strong> Spend a Mythic Point; if the triggering save was made due to an effect created by a mythic monster, hazard, or other effect, it's a normal failure instead. If the save was made due to an effect that wasn't mythic, it becomes a success.</p><hr /><p><strong>Craft Requirements</strong> <em>Mythic resilient</em> runes can only be crafted, etched, or transferred by a mythic character capable of making a Crafting check at mythic proficiency (such as by having the Artisan's Calling).</p>"
+        },
+        "rules": [],
+        "slug": "mythic-resilient",
+        "_migration": {
+          "version": 0.943,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.943,
+            "foundry": "13.348",
+            "system": "7.5.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "magical",
+            "mythic"
+          ],
+          "rarity": "rare"
+        },
+        "publication": {
+          "title": "Pathfinder War of Immortals",
+          "authors": "",
+          "license": "ORC",
+          "remaster": true
+        },
+        "level": {
+          "value": 20
+        },
+        "quantity": 99,
+        "baseItem": null,
+        "bulk": {
+          "value": 0
+        },
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "price": {
+          "value": {
+            "gp": 70000
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "invested": null
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "etched-onto-armor"
+        },
+        "subitems": []
+      },
+      "type": "equipment",
+      "_stats": {
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.5PuhK1jPUkMqGShH",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.348",
+        "systemId": "pf2e",
+        "systemVersion": "7.5.2",
+        "lastModifiedBy": null
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 700000,
+      "ownership": {
+        "default": 0,
+        "UPnjMbTUnpLyKVOr": 3
+      },
+      "flags": {},
+      "_id": "5541hDBVTHHDTvPj",
+      "_key": "!actors.items!jDJzuPl6O12Um51w.5541hDBVTHHDTvPj"
+    },
+    {
+      "img": "systems/pf2e/icons/equipment/runes/fundamental-armor-runes/armor-potency.webp",
+      "name": "Resilient (Major)",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p><em>Resilient</em> runes imbue armor with additional protective magic. This grants the wearer a +3 item bonus to saving throws.</p>\n<p>You can upgrade the <em>resilient</em> rune already etched on a suit of armor using the normal process for upgrading items and runes.</p>"
+        },
+        "rules": [],
+        "slug": "resilient-major",
+        "_migration": {
+          "version": 0.943,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.943,
+            "foundry": "13.348",
+            "system": "7.5.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "magical"
+          ],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder GM Core",
+          "authors": "",
+          "license": "ORC",
+          "remaster": true
+        },
+        "level": {
+          "value": 20
+        },
+        "quantity": 99,
+        "baseItem": null,
+        "bulk": {
+          "value": 0
+        },
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "price": {
+          "value": {
+            "gp": 49440
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "invested": null
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "etched-onto-armor"
+        },
+        "subitems": []
+      },
+      "type": "equipment",
+      "_stats": {
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.WKcvvaZ0LxwYreb7",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.348",
+        "systemId": "pf2e",
+        "systemVersion": "7.5.2",
+        "lastModifiedBy": null
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 600000,
+      "ownership": {
+        "default": 0,
+        "UPnjMbTUnpLyKVOr": 3
+      },
+      "flags": {},
+      "_id": "jzMmZ48zqLHH45MM",
+      "_key": "!actors.items!jDJzuPl6O12Um51w.jzMmZ48zqLHH45MM"
+    }
+  ],
+  "folder": "kkPqa1ghg5rDEdWC",
+  "sort": 100000,
+  "flags": {
+    "item-piles": {
+      "data": {
+        "enabled": true,
+        "type": "merchant",
+        "merchantColumns": [
+          {
+            "label": "Rarity",
+            "path": "system.traits.rarity",
+            "formatting": "{#}",
+            "buying": true,
+            "selling": true,
+            "mapping": {
+              "common": "PF2E.TraitCommon",
+              "uncommon": "PF2E.TraitUncommon",
+              "rare": "PF2E.TraitRare",
+              "unique": "PF2E.TraitUnique"
+            }
+          },
+          {
+            "label": "Level",
+            "path": "system.level.value",
+            "formatting": "{#}",
+            "mapping": {},
+            "buying": true,
+            "selling": true
+          },
+          {
+            "label": "Usage",
+            "path": "system.usage.value",
+            "formatting": "{#}",
+            "mapping": {
+              "etched-onto-armor": "Armor"
+            },
+            "buying": true,
+            "selling": true
+          }
+        ],
+        "infiniteQuantity": true,
+        "hideTokenWhenClosed": true,
+        "distance": null
+      },
+      "version": "3.2.14",
+      "sharing": {}
+    },
+    "pf2e-toolbelt": {
+      "betterMerchant": {
+        "infiniteAll": true
+      }
+    }
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.348",
+    "systemId": "pf2e",
+    "systemVersion": "7.5.2",
+    "createdTime": 1760023972900,
+    "modifiedTime": 1760023972900,
+    "lastModifiedBy": "UPnjMbTUnpLyKVOr"
+  },
+  "_key": "!actors!jDJzuPl6O12Um51w"
+}

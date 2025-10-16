@@ -1,0 +1,15 @@
+{
+	"name": "foundryvtt-pf2e-merchant-maker",
+	"private": true,
+	"type": "module",
+	"engines": {
+		"node": ">=18"
+	},
+	"scripts": {
+		"extract": "node build/extract.mjs",
+		"compile": "node build/compile.mjs"
+	},
+	"devDependencies": {
+		"@foundryvtt/foundryvtt-cli": "^3.0.0"
+	}
+}
