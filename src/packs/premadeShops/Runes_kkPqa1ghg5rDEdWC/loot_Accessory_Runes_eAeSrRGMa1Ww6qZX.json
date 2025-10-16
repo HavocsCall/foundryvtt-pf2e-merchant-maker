@@ -1,0 +1,2924 @@
+{
+  "folder": "kkPqa1ghg5rDEdWC",
+  "name": "Accessory Runes",
+  "type": "loot",
+  "ownership": {
+    "default": 1
+  },
+  "prototypeToken": {
+    "flags": {
+      "pf2e": {
+        "linkToActorSize": false,
+        "autoscale": false
+      }
+    },
+    "height": 1,
+    "width": 1,
+    "actorLink": true,
+    "sight": {
+      "enabled": false,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "name": "Accessory Runes",
+    "displayName": 50,
+    "texture": {
+      "src": "icons/commodities/treasure/token-runed-mem-red.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "offsetX": 0,
+      "offsetY": 0,
+      "fit": "contain",
+      "scaleX": 1,
+      "scaleY": 1,
+      "rotation": 0,
+      "tint": "#ffffff",
+      "alphaThreshold": 0.75
+    },
+    "lockRotation": true,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "displayBars": 20,
+    "bar1": {
+      "attribute": "attributes.hp"
+    },
+    "bar2": {
+      "attribute": null
+    },
+    "light": {
+      "negative": false,
+      "priority": 0,
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "color": null,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "detectionModes": [],
+    "occludable": {
+      "radius": 0
+    },
+    "ring": {
+      "enabled": false,
+      "colors": {
+        "ring": null,
+        "background": null
+      },
+      "effects": 0,
+      "subject": {
+        "scale": 1,
+        "texture": null
+      }
+    },
+    "turnMarker": {
+      "mode": 1,
+      "animation": null,
+      "src": null,
+      "disposition": false
+    },
+    "movementAction": null,
+    "randomImg": false,
+    "appendNumber": false,
+    "prependAdjective": false
+  },
+  "effects": [],
+  "system": {
+    "_migration": {
+      "version": 0.943,
+      "previous": {
+        "schema": 0.943,
+        "foundry": "13.348",
+        "system": "7.5.2"
+      }
+    },
+    "details": {
+      "description": "",
+      "level": {
+        "value": 0
+      }
+    },
+    "lootSheetType": "Merchant",
+    "hiddenWhenEmpty": false
+  },
+  "_id": "eAeSrRGMa1Ww6qZX",
+  "img": "icons/commodities/treasure/token-runed-mem-red.webp",
+  "items": [
+    {
+      "img": "systems/pf2e/icons/equipment/runes/weapon-property-runes/weapon-property-runes.webp",
+      "name": "Menacing",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>Common among brutes who use the magic to scare others into compliance, menacing runes lend you a formidable appearance, granting you a +1 item bonus to Intimidation checks to @UUID[Compendium.pf2e.actionspf2e.Item.tHCqgwjtQtzNqVvd]{Coerce} others.</p>"
+        },
+        "rules": [
+          {
+            "key": "FlatModifier",
+            "predicate": [
+              "action:coerce"
+            ],
+            "selector": "intimidation",
+            "type": "item",
+            "value": 1
+          }
+        ],
+        "slug": "menacing",
+        "_migration": {
+          "version": 0.943,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.943,
+            "foundry": "13.348",
+            "system": "7.5.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "magical"
+          ],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder Treasure Vault (Remastered)",
+          "authors": "",
+          "license": "ORC",
+          "remaster": true
+        },
+        "level": {
+          "value": 3
+        },
+        "quantity": 99,
+        "baseItem": null,
+        "bulk": {
+          "value": 0
+        },
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "price": {
+          "value": {
+            "gp": 50
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "invested": null
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "Unusual Object",
+            "img": "systems/pf2e/icons/unidentified_item_icons/adventuring_gear.webp",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "applied-to-any-visible-article-of-clothing"
+        },
+        "subitems": []
+      },
+      "type": "equipment",
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.348",
+        "systemId": "pf2e",
+        "systemVersion": "7.5.2",
+        "lastModifiedBy": null
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0,
+        "UPnjMbTUnpLyKVOr": 3
+      },
+      "flags": {},
+      "_id": "VGgZqlgD944LmEYX",
+      "_key": "!actors.items!eAeSrRGMa1Ww6qZX.VGgZqlgD944LmEYX"
+    },
+    {
+      "img": "systems/pf2e/icons/equipment/runes/weapon-property-runes/weapon-property-runes.webp",
+      "name": "Preserving",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p><em>Preserving runes</em> are common among merchants and other travelers who are on the road for weeks or months at a time. Any non-magical food and drink inside a container with a <em>preserving rune</em> remains fresher for longer, taking ten times as long to spoil. This feature doesn't prolong the duration of alchemical items.</p>"
+        },
+        "rules": [],
+        "slug": "preserving",
+        "_migration": {
+          "version": 0.943,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.943,
+            "foundry": "13.348",
+            "system": "7.5.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "magical"
+          ],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder Treasure Vault (Remastered)",
+          "authors": "",
+          "license": "ORC",
+          "remaster": true
+        },
+        "level": {
+          "value": 3
+        },
+        "quantity": 99,
+        "baseItem": null,
+        "bulk": {
+          "value": 0
+        },
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "price": {
+          "value": {
+            "gp": 45
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "invested": null
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "Unusual Object",
+            "img": "systems/pf2e/icons/unidentified_item_icons/adventuring_gear.webp",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "applied-to-a-basket-bag-or-other-container"
+        },
+        "subitems": []
+      },
+      "type": "equipment",
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.348",
+        "systemId": "pf2e",
+        "systemVersion": "7.5.2",
+        "lastModifiedBy": null
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0,
+        "UPnjMbTUnpLyKVOr": 3
+      },
+      "flags": {},
+      "_id": "xfhbMw48UiLyommI",
+      "_key": "!actors.items!eAeSrRGMa1Ww6qZX.xfhbMw48UiLyommI"
+    },
+    {
+      "img": "systems/pf2e/icons/equipment/runes/armor-property-runes/armor-property-runes.webp",
+      "name": "Trackless",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>Trackless runes are common among hunters and trappers, as well as thieves and anyone fleeing pursuit. While wearing trackless footwear, you have a +4 item bonus to the DC to track you. However, this bonus doesn't stack with the status bonus from @UUID[Compendium.pf2e.spells-srd.Item.zlnXpME1T2uvn8Lr]{Vanishing Tracks}.</p>"
+        },
+        "rules": [],
+        "slug": "trackless",
+        "_migration": {
+          "version": 0.943,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.943,
+            "foundry": "13.348",
+            "system": "7.5.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "magical"
+          ],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder Treasure Vault (Remastered)",
+          "authors": "",
+          "license": "ORC",
+          "remaster": true
+        },
+        "level": {
+          "value": 6
+        },
+        "quantity": 99,
+        "baseItem": null,
+        "bulk": {
+          "value": 0
+        },
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "price": {
+          "value": {
+            "gp": 225
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "invested": null
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "Unusual Object",
+            "img": "systems/pf2e/icons/unidentified_item_icons/adventuring_gear.webp",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "applied-to-footwear"
+        },
+        "subitems": []
+      },
+      "type": "equipment",
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.348",
+        "systemId": "pf2e",
+        "systemVersion": "7.5.2",
+        "lastModifiedBy": null
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0,
+        "UPnjMbTUnpLyKVOr": 3
+      },
+      "flags": {},
+      "_id": "wiAFZ0tZpa8Qqwvq",
+      "_key": "!actors.items!eAeSrRGMa1Ww6qZX.wiAFZ0tZpa8Qqwvq"
+    },
+    {
+      "img": "systems/pf2e/icons/equipment/runes/weapon-property-runes/weapon-property-runes.webp",
+      "name": "Preserving (Greater)",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p><em>Preserving runes</em> are common among merchants and other travelers who are on the road for weeks or months at a time. Any non-magical food and drink inside a container with a <em>greater preserving rune</em> never spoils. This feature doesn't prolong the duration of alchemical items.</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> (concentrate, manipulate)</p>\n<p><strong>Frequency</strong> once per day</p><hr /><p><strong>Effect</strong> The container casts @UUID[Compendium.pf2e.spells-srd.Item.qXTB7Ec9yYh5JPPV]{Cleanse Cuisine} on all the food and drink within.</p>"
+        },
+        "rules": [],
+        "slug": "preserving-greater",
+        "_migration": {
+          "version": 0.943,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.943,
+            "foundry": "13.348",
+            "system": "7.5.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "magical"
+          ],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder Treasure Vault (Remastered)",
+          "authors": "",
+          "license": "ORC",
+          "remaster": true
+        },
+        "level": {
+          "value": 8
+        },
+        "quantity": 99,
+        "baseItem": null,
+        "bulk": {
+          "value": 0
+        },
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "price": {
+          "value": {
+            "gp": 450
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "invested": null
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "Unusual Object",
+            "img": "systems/pf2e/icons/unidentified_item_icons/adventuring_gear.webp",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "applied-to-a-basket-bag-or-other-container"
+        },
+        "subitems": []
+      },
+      "type": "equipment",
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.348",
+        "systemId": "pf2e",
+        "systemVersion": "7.5.2",
+        "lastModifiedBy": null
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 400000,
+      "ownership": {
+        "default": 0,
+        "UPnjMbTUnpLyKVOr": 3
+      },
+      "flags": {},
+      "_id": "FKSjKZqFHIFFXYX1",
+      "_key": "!actors.items!eAeSrRGMa1Ww6qZX.FKSjKZqFHIFFXYX1"
+    },
+    {
+      "img": "icons/magic/movement/trail-streak-impact-blue.webp",
+      "name": "Pontoon",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>Footwear with <em>pontoon runes</em> allows you to traverse waterways with ease. While wearing footwear with the rune, you can walk on the surface of water and other liquids without falling through. This offers no protection against damage the liquid deals. You can go under the liquid's surface, but you must Swim if you do.</p>"
+        },
+        "rules": [],
+        "slug": "pontoon",
+        "_migration": {
+          "version": 0.943,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.943,
+            "foundry": "13.348",
+            "system": "7.5.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "magical"
+          ],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder Treasure Vault (Remastered)",
+          "authors": "",
+          "license": "ORC",
+          "remaster": true
+        },
+        "level": {
+          "value": 9
+        },
+        "quantity": 99,
+        "baseItem": null,
+        "bulk": {
+          "value": 0
+        },
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "price": {
+          "value": {
+            "gp": 650
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "invested": null
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "applied-to-footwear"
+        },
+        "subitems": []
+      },
+      "type": "equipment",
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.348",
+        "systemId": "pf2e",
+        "systemVersion": "7.5.2",
+        "lastModifiedBy": null
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 500000,
+      "ownership": {
+        "default": 0,
+        "UPnjMbTUnpLyKVOr": 3
+      },
+      "flags": {},
+      "_id": "yPVSqbden3EFRJpB",
+      "_key": "!actors.items!eAeSrRGMa1Ww6qZX.yPVSqbden3EFRJpB"
+    },
+    {
+      "img": "systems/pf2e/icons/equipment/runes/weapon-property-runes/weapon-property-runes.webp",
+      "name": "Menacing (Greater)",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>Common among brutes who use the magic to scare others into compliance, menacing runes lend you a formidable appearance, granting you a +2 item bonus to Intimidation checks to @UUID[Compendium.pf2e.actionspf2e.Item.tHCqgwjtQtzNqVvd]{Coerce} others.</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> (concentrate, manipulate)</p>\n<p><strong>Frequency</strong> once per day</p><hr /><p><strong>Effect</strong> The rune casts a 3rd-rank @UUID[Compendium.pf2e.spells-srd.Item.4koZzrnMXhhosn0D]{Fear} spell (DC 25).</p>"
+        },
+        "rules": [
+          {
+            "key": "FlatModifier",
+            "predicate": [
+              "action:coerce"
+            ],
+            "selector": "intimidation",
+            "type": "item",
+            "value": 2
+          }
+        ],
+        "slug": "menacing-greater",
+        "_migration": {
+          "version": 0.943,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.943,
+            "foundry": "13.348",
+            "system": "7.5.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "magical"
+          ],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder Treasure Vault (Remastered)",
+          "authors": "",
+          "license": "ORC",
+          "remaster": true
+        },
+        "level": {
+          "value": 10
+        },
+        "quantity": 99,
+        "baseItem": null,
+        "bulk": {
+          "value": 0
+        },
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "price": {
+          "value": {
+            "gp": 900
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "invested": null
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "applied-to-any-visible-article-of-clothing"
+        },
+        "subitems": []
+      },
+      "type": "equipment",
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.348",
+        "systemId": "pf2e",
+        "systemVersion": "7.5.2",
+        "lastModifiedBy": null
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 600000,
+      "ownership": {
+        "default": 0,
+        "UPnjMbTUnpLyKVOr": 3
+      },
+      "flags": {},
+      "_id": "0FiESVTkPAxZDNoj",
+      "_key": "!actors.items!eAeSrRGMa1Ww6qZX.0FiESVTkPAxZDNoj"
+    },
+    {
+      "img": "systems/pf2e/icons/equipment/runes/armor-property-runes/armor-property-runes.webp",
+      "name": "Trackless (Greater)",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>Trackless runes are common among hunters and trappers, as well as thieves and anyone fleeing pursuit. While wearing trackless footwear, you have a +4 item bonus to the DC to track you. However, this bonus doesn't stack with the status bonus from @UUID[Compendium.pf2e.spells-srd.Item.zlnXpME1T2uvn8Lr]{Vanishing Tracks}.</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> (concentrate)</p>\n<p><strong>Frequency</strong> once per day</p><hr /><p><strong>Effect</strong> You extend the effect of your rune out to a @Template[emanation|distance:20]. The emanation remains for 8 hours, affecting up to 10 creatures of your choice within the area. You can Dismiss this effect.</p>"
+        },
+        "rules": [],
+        "slug": "trackless-greater",
+        "_migration": {
+          "version": 0.943,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.943,
+            "foundry": "13.348",
+            "system": "7.5.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "magical"
+          ],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder Treasure Vault (Remastered)",
+          "authors": "",
+          "license": "ORC",
+          "remaster": true
+        },
+        "level": {
+          "value": 10
+        },
+        "quantity": 99,
+        "baseItem": null,
+        "bulk": {
+          "value": 0
+        },
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "price": {
+          "value": {
+            "gp": 900
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "invested": null
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "applied-to-footwear"
+        },
+        "subitems": []
+      },
+      "type": "equipment",
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.348",
+        "systemId": "pf2e",
+        "systemVersion": "7.5.2",
+        "lastModifiedBy": null
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 700000,
+      "ownership": {
+        "default": 0,
+        "UPnjMbTUnpLyKVOr": 3
+      },
+      "flags": {},
+      "_id": "mCasCITzni2OtLYa",
+      "_key": "!actors.items!eAeSrRGMa1Ww6qZX.mCasCITzni2OtLYa"
+    },
+    {
+      "img": "icons/commodities/treasure/token-runed-os-grey.webp",
+      "name": "Called",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>With this rune, you can instantly retrieve an item in your possession without digging around looking for it.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> command</p>\n<p><strong>Frequency</strong> once per hour</p>\n<p><strong>Requirements</strong> You have a free hand and the <em>called</em> item is in a bag, pack, pouch, or other container on your person, or unattended within 30 feet</p>\n<hr />\n<p><strong>Effect</strong> The item teleports to a free hand.</p>"
+        },
+        "rules": [],
+        "slug": "called",
+        "_migration": {
+          "version": 0.943,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.943,
+            "foundry": "13.348",
+            "system": "7.5.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "magical"
+          ],
+          "rarity": "uncommon"
+        },
+        "publication": {
+          "title": "Pathfinder Lost Omens The Grand Bazaar",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 3
+        },
+        "quantity": 99,
+        "baseItem": null,
+        "bulk": {
+          "value": 0
+        },
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "price": {
+          "value": {
+            "gp": 60
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "invested": null
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "Unusual Object",
+            "img": "systems/pf2e/icons/unidentified_item_icons/adventuring_gear.webp",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "applied-to-any-item-of-light-or-negligible-bulk"
+        },
+        "subitems": []
+      },
+      "type": "equipment",
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.348",
+        "systemId": "pf2e",
+        "systemVersion": "7.5.2",
+        "lastModifiedBy": null
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 800000,
+      "ownership": {
+        "default": 0,
+        "UPnjMbTUnpLyKVOr": 3
+      },
+      "flags": {},
+      "_id": "YVu5EZB8Huq8mAlV",
+      "_key": "!actors.items!eAeSrRGMa1Ww6qZX.YVu5EZB8Huq8mAlV"
+    },
+    {
+      "img": "icons/commodities/treasure/token-runed-os-grey.webp",
+      "name": "Presentable",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>A garment with this rune is always clean, as though it had just been affected by @UUID[Compendium.pf2e.spells-srd.Item.Qw3fnUlaUbnn7ipC]{Prestidigitation}. You gain a +1 item bonus to @UUID[Compendium.pf2e.actionspf2e.Item.OX4fy22hQgUHDr0q]{Make an Impression} on those who would be impressed by a particular <em>presentable</em> outfit while wearing this garment.</p>"
+        },
+        "rules": [
+          {
+            "key": "FlatModifier",
+            "predicate": [
+              "action:make-an-impression"
+            ],
+            "selector": "diplomacy",
+            "type": "item",
+            "value": 1
+          }
+        ],
+        "slug": "presentable",
+        "_migration": {
+          "version": 0.943,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.943,
+            "foundry": "13.348",
+            "system": "7.5.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "magical"
+          ],
+          "rarity": "uncommon"
+        },
+        "publication": {
+          "title": "Pathfinder Lost Omens The Grand Bazaar",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 3
+        },
+        "quantity": 99,
+        "baseItem": null,
+        "bulk": {
+          "value": 0
+        },
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "price": {
+          "value": {
+            "gp": 50
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "invested": null
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "Unusual Object",
+            "img": "systems/pf2e/icons/unidentified_item_icons/adventuring_gear.webp",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "applied-to-any-visible-article-of-clothing"
+        },
+        "subitems": []
+      },
+      "type": "equipment",
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.348",
+        "systemId": "pf2e",
+        "systemVersion": "7.5.2",
+        "lastModifiedBy": null
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 900000,
+      "ownership": {
+        "default": 0,
+        "UPnjMbTUnpLyKVOr": 3
+      },
+      "flags": {},
+      "_id": "xB4m0j71GRp6RjZE",
+      "_key": "!actors.items!eAeSrRGMa1Ww6qZX.xB4m0j71GRp6RjZE"
+    },
+    {
+      "img": "icons/commodities/treasure/token-runed-os-grey.webp",
+      "name": "Snagging",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>This animated item attempts to catch you when you fall. You can attempt to @UUID[Compendium.pf2e.actionspf2e.Item.3yoajuKjwHZ9ApUY]{Grab an Edge}, even if your hands are tied behind your back or otherwise @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}, so long as there's a solid edge within 10 feet. If you roll a success, you can Grab the Edge even if you don't have a hand free.</p>"
+        },
+        "rules": [],
+        "slug": "snagging",
+        "_migration": {
+          "version": 0.943,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.943,
+            "foundry": "13.348",
+            "system": "7.5.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "magical"
+          ],
+          "rarity": "uncommon"
+        },
+        "publication": {
+          "title": "Pathfinder Lost Omens The Grand Bazaar",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 3
+        },
+        "quantity": 99,
+        "baseItem": null,
+        "bulk": {
+          "value": 0
+        },
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "price": {
+          "value": {
+            "gp": 60
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "invested": null
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "Unusual Object",
+            "img": "systems/pf2e/icons/unidentified_item_icons/adventuring_gear.webp",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "applied-to-belt-cape-cloak-or-scarf"
+        },
+        "subitems": []
+      },
+      "type": "equipment",
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.348",
+        "systemId": "pf2e",
+        "systemVersion": "7.5.2",
+        "lastModifiedBy": null
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 1000000,
+      "ownership": {
+        "default": 0,
+        "UPnjMbTUnpLyKVOr": 3
+      },
+      "flags": {},
+      "_id": "bdq3GqjL01ynjf7g",
+      "_key": "!actors.items!eAeSrRGMa1Ww6qZX.bdq3GqjL01ynjf7g"
+    },
+    {
+      "img": "icons/commodities/treasure/token-runed-os-grey.webp",
+      "name": "Soft-Landing",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>This item creates a small cushion of air that catches you when you fall. You treat falls as 10 feet shorter.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">r</span> envision</p>\n<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> You begin to fall</p>\n<hr />\n<p><strong>Effect</strong> You gain the effects of @UUID[Compendium.pf2e.spells-srd.Item.TTwOKGqmZeKSyNMH]{Gentle Landing} for 1 minute or until you stop falling, whichever comes first.</p>"
+        },
+        "rules": [],
+        "slug": "soft-landing",
+        "_migration": {
+          "version": 0.943,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.943,
+            "foundry": "13.348",
+            "system": "7.5.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "magical"
+          ],
+          "rarity": "uncommon"
+        },
+        "publication": {
+          "title": "Pathfinder Lost Omens The Grand Bazaar",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 3
+        },
+        "quantity": 99,
+        "baseItem": null,
+        "bulk": {
+          "value": 0
+        },
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "price": {
+          "value": {
+            "gp": 60
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "invested": null
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "Unusual Object",
+            "img": "systems/pf2e/icons/unidentified_item_icons/adventuring_gear.webp",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "applied-to-boots-cape-cloak-or-umbrella"
+        },
+        "subitems": []
+      },
+      "type": "equipment",
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.348",
+        "systemId": "pf2e",
+        "systemVersion": "7.5.2",
+        "lastModifiedBy": null
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 1100000,
+      "ownership": {
+        "default": 0,
+        "UPnjMbTUnpLyKVOr": 3
+      },
+      "flags": {},
+      "_id": "KpxowkvNw4vYsNMu",
+      "_key": "!actors.items!eAeSrRGMa1Ww6qZX.KpxowkvNw4vYsNMu"
+    },
+    {
+      "img": "systems/pf2e/icons/equipment/runes/armor-property-runes/armor-property-runes.webp",
+      "name": "Unexceptional",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>Merchants traveling into Stonebreach sometimes apply this accessory rune to specific wares to avoid the notice of thieves. Conversely, many thieves in Highhelm apply these runes to stolen goods to help them smuggle items out of the city. The item gains the effects of @UUID[Compendium.pf2e.spells-srd.Item.PRrZ7anETWPm90YY]{Disguise Magic} to appear as non-magical. The rune's effects also cause anyone who closely observes or holds the item to believe it is a mundane version of that type of item, such as believing a magical dagger to be an ordinary dagger, unless the creature succeeds at a @Check[will|dc:18] save. Creatures that succeed their save see that there is more to the item than meets the eye, but aren't immediately aware of the <em>magic aura</em> effect.</p>"
+        },
+        "rules": [],
+        "slug": "unexceptional",
+        "_migration": {
+          "version": 0.943,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.943,
+            "foundry": "13.348",
+            "system": "7.5.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "illusion",
+            "magical"
+          ],
+          "rarity": "uncommon"
+        },
+        "publication": {
+          "title": "Pathfinder Lost Omens Highhelm",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 3
+        },
+        "quantity": 99,
+        "baseItem": null,
+        "bulk": {
+          "value": 0.1
+        },
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "price": {
+          "value": {
+            "gp": 60
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "invested": null
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "Unusual Object",
+            "img": "systems/pf2e/icons/unidentified_item_icons/adventuring_gear.webp",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "applied-to-any-item-of-light-or-negligible-bulk"
+        },
+        "subitems": []
+      },
+      "type": "equipment",
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.348",
+        "systemId": "pf2e",
+        "systemVersion": "7.5.2",
+        "lastModifiedBy": null
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 1200000,
+      "ownership": {
+        "default": 0,
+        "UPnjMbTUnpLyKVOr": 3
+      },
+      "flags": {},
+      "_id": "KN6U1XS2iuYTW1U8",
+      "_key": "!actors.items!eAeSrRGMa1Ww6qZX.KN6U1XS2iuYTW1U8"
+    },
+    {
+      "img": "icons/commodities/treasure/token-runed-os-grey.webp",
+      "name": "Dragon's Breath (1st Level Spell)",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>This rune depicts a specific type of dragon, resizing after application to fit the surface of the item.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">f</span> envision (spellshape)</p>\n<p><strong>Requirements</strong> You're receiving a bonus to AC from your <em>dragon's breath</em> cape or shield</p>\n<hr />\n<p><strong>Effect</strong> If your next action is to @UUID[Compendium.pf2e.actionspf2e.Item.aBQ8ajvEBByv45yz]{Cast a Spell} with an area of effect that deals the same type of damage as the depicted dragon's breath weapon, the spell gains the effects of the @UUID[Compendium.pf2e.feats-srd.Item.FoWO4RnHRwfEIC7Q]{Widen Spell} feat. The rune can only affect spells of 1st level.</p>"
+        },
+        "rules": [],
+        "slug": "dragons-breath-1st-level-spell",
+        "_migration": {
+          "version": 0.943,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.943,
+            "foundry": "13.348",
+            "system": "7.5.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "magical"
+          ],
+          "rarity": "uncommon"
+        },
+        "publication": {
+          "title": "Pathfinder Lost Omens The Grand Bazaar",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 4
+        },
+        "quantity": 99,
+        "baseItem": null,
+        "bulk": {
+          "value": 0
+        },
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "price": {
+          "value": {
+            "gp": 100
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "invested": null
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "applied-to-dueling-cape-or-shield"
+        },
+        "subitems": []
+      },
+      "type": "equipment",
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.348",
+        "systemId": "pf2e",
+        "systemVersion": "7.5.2",
+        "lastModifiedBy": null
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 1300000,
+      "ownership": {
+        "default": 0,
+        "UPnjMbTUnpLyKVOr": 3
+      },
+      "flags": {},
+      "_id": "pmIWBAdwYQIkjNNO",
+      "_key": "!actors.items!eAeSrRGMa1Ww6qZX.pmIWBAdwYQIkjNNO"
+    },
+    {
+      "img": "icons/commodities/treasure/token-runed-os-grey.webp",
+      "name": "Paired",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>These runes always come in pairs and can be applied to a garment's pockets to be activated.</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> command</p>\n<p><strong>Frequency</strong> once per day</p>\n<p><strong>Requirements</strong> The paired items are both invested, typically by two different characters, and are within 100 feet of each other</p>\n<hr />\n<p><strong>Effect</strong> Items in the pockets (up to 10 negligible Bulk items or 1 light Bulk item per pocket) trade places via teleportation.</p>"
+        },
+        "rules": [],
+        "slug": "paired",
+        "_migration": {
+          "version": 0.943,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.943,
+            "foundry": "13.348",
+            "system": "7.5.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "magical",
+            "teleportation"
+          ],
+          "rarity": "uncommon"
+        },
+        "publication": {
+          "title": "Pathfinder Lost Omens The Grand Bazaar",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 5
+        },
+        "quantity": 99,
+        "baseItem": null,
+        "bulk": {
+          "value": 0
+        },
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "price": {
+          "value": {
+            "gp": 150
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "invested": null
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "Unusual Object",
+            "img": "systems/pf2e/icons/unidentified_item_icons/adventuring_gear.webp",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "each-rune-applied-to-a-separate-item-that-has-pockets"
+        },
+        "subitems": []
+      },
+      "type": "equipment",
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.348",
+        "systemId": "pf2e",
+        "systemVersion": "7.5.2",
+        "lastModifiedBy": null
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 1400000,
+      "ownership": {
+        "default": 0,
+        "UPnjMbTUnpLyKVOr": 3
+      },
+      "flags": {},
+      "_id": "qMbscrf4Tmzpn5tG",
+      "_key": "!actors.items!eAeSrRGMa1Ww6qZX.qMbscrf4Tmzpn5tG"
+    },
+    {
+      "img": "icons/commodities/treasure/token-runed-os-grey.webp",
+      "name": "Dragon's Breath (2nd Level Spell)",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>This rune depicts a specific type of dragon, resizing after application to fit the surface of the item.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">f</span> envision (spellshape)</p>\n<p><strong>Requirements</strong> You're receiving a bonus to AC from your <em>dragon's breath</em> cape or shield</p>\n<hr />\n<p><strong>Effect</strong> If your next action is to @UUID[Compendium.pf2e.actionspf2e.Item.aBQ8ajvEBByv45yz]{Cast a Spell} with an area of effect that deals the same type of damage as the depicted dragon's breath weapon, the spell gains the effects of the @UUID[Compendium.pf2e.feats-srd.Item.FoWO4RnHRwfEIC7Q]{Widen Spell} feat. The rune can only affect spells of 2nd level or lower.</p>"
+        },
+        "rules": [],
+        "slug": "dragons-breath-2nd-level-spell",
+        "_migration": {
+          "version": 0.943,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.943,
+            "foundry": "13.348",
+            "system": "7.5.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "magical"
+          ],
+          "rarity": "uncommon"
+        },
+        "publication": {
+          "title": "Pathfinder Lost Omens The Grand Bazaar",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 6
+        },
+        "quantity": 99,
+        "baseItem": null,
+        "bulk": {
+          "value": 0
+        },
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "price": {
+          "value": {
+            "gp": 250
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "invested": null
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "applied-to-dueling-cape-or-shield"
+        },
+        "subitems": []
+      },
+      "type": "equipment",
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.348",
+        "systemId": "pf2e",
+        "systemVersion": "7.5.2",
+        "lastModifiedBy": null
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 1500000,
+      "ownership": {
+        "default": 0,
+        "UPnjMbTUnpLyKVOr": 3
+      },
+      "flags": {},
+      "_id": "VxA5jhsTHwN3BVna",
+      "_key": "!actors.items!eAeSrRGMa1Ww6qZX.VxA5jhsTHwN3BVna"
+    },
+    {
+      "img": "icons/commodities/treasure/token-runed-os-grey.webp",
+      "name": "Wind-Catcher",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>This rune is invested by the captain or pilot of the vehicle. The vehicle gains a +5-foot item bonus to its Speed. If lack of wind prevents the vehicle from moving, it can still move at a Speed of 5 feet.</p>"
+        },
+        "rules": [],
+        "slug": "wind-catcher",
+        "_migration": {
+          "version": 0.943,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.943,
+            "foundry": "13.348",
+            "system": "7.5.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "magical"
+          ],
+          "rarity": "uncommon"
+        },
+        "publication": {
+          "title": "Pathfinder Lost Omens The Grand Bazaar",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 7
+        },
+        "quantity": 99,
+        "baseItem": null,
+        "bulk": {
+          "value": 0
+        },
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "price": {
+          "value": {
+            "gp": 350
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "invested": null
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "Unusual Object",
+            "img": "systems/pf2e/icons/unidentified_item_icons/adventuring_gear.webp",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "applied-to-a-wind-powered-vehicle"
+        },
+        "subitems": []
+      },
+      "type": "equipment",
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.348",
+        "systemId": "pf2e",
+        "systemVersion": "7.5.2",
+        "lastModifiedBy": null
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 1600000,
+      "ownership": {
+        "default": 0,
+        "UPnjMbTUnpLyKVOr": 3
+      },
+      "flags": {},
+      "_id": "QBSPWG7cMSijvZYP",
+      "_key": "!actors.items!eAeSrRGMa1Ww6qZX.QBSPWG7cMSijvZYP"
+    },
+    {
+      "img": "icons/commodities/treasure/token-runed-os-grey.webp",
+      "name": "Dragon's Breath (3rd Level Spell)",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>This rune depicts a specific type of dragon, resizing after application to fit the surface of the item.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">f</span> envision (spellshape)</p>\n<p><strong>Requirements</strong> You're receiving a bonus to AC from your <em>dragon's breath</em> cape or shield</p>\n<hr />\n<p><strong>Effect</strong> If your next action is to @UUID[Compendium.pf2e.actionspf2e.Item.aBQ8ajvEBByv45yz]{Cast a Spell} with an area of effect that deals the same type of damage as the depicted dragon's breath weapon, the spell gains the effects of the @UUID[Compendium.pf2e.feats-srd.Item.FoWO4RnHRwfEIC7Q]{Widen Spell} feat. The rune can only affect spells of 3rd level or lower.</p>"
+        },
+        "rules": [],
+        "slug": "dragons-breath-3rd-level-spell",
+        "_migration": {
+          "version": 0.943,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.943,
+            "foundry": "13.348",
+            "system": "7.5.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "magical"
+          ],
+          "rarity": "uncommon"
+        },
+        "publication": {
+          "title": "Pathfinder Lost Omens The Grand Bazaar",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 8
+        },
+        "quantity": 99,
+        "baseItem": null,
+        "bulk": {
+          "value": 0
+        },
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "price": {
+          "value": {
+            "gp": 500
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "invested": null
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "applied-to-dueling-cape-or-shield"
+        },
+        "subitems": []
+      },
+      "type": "equipment",
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.348",
+        "systemId": "pf2e",
+        "systemVersion": "7.5.2",
+        "lastModifiedBy": null
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 1700000,
+      "ownership": {
+        "default": 0,
+        "UPnjMbTUnpLyKVOr": 3
+      },
+      "flags": {},
+      "_id": "SJcFtpHPLeNlLK7t",
+      "_key": "!actors.items!eAeSrRGMa1Ww6qZX.SJcFtpHPLeNlLK7t"
+    },
+    {
+      "img": "icons/commodities/treasure/token-runed-os-grey.webp",
+      "name": "Dragon's Breath (4th Level Spell)",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>This rune depicts a specific type of dragon, resizing after application to fit the surface of the item.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">f</span> envision (spellshape)</p>\n<p><strong>Requirements</strong> You're receiving a bonus to AC from your <em>dragon's breath</em> cape or shield</p>\n<hr />\n<p><strong>Effect</strong> If your next action is to @UUID[Compendium.pf2e.actionspf2e.Item.aBQ8ajvEBByv45yz]{Cast a Spell} with an area of effect that deals the same type of damage as the depicted dragon's breath weapon, the spell gains the effects of the @UUID[Compendium.pf2e.feats-srd.Item.FoWO4RnHRwfEIC7Q]{Widen Spell} feat. The rune can only affect spells of 4th level or lower.</p>"
+        },
+        "rules": [],
+        "slug": "dragons-breath-4th-level-spell",
+        "_migration": {
+          "version": 0.943,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.943,
+            "foundry": "13.348",
+            "system": "7.5.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "magical"
+          ],
+          "rarity": "uncommon"
+        },
+        "publication": {
+          "title": "Pathfinder Lost Omens The Grand Bazaar",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 10
+        },
+        "quantity": 99,
+        "baseItem": null,
+        "bulk": {
+          "value": 0
+        },
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "price": {
+          "value": {
+            "gp": 1000
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "invested": null
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "applied-to-dueling-cape-or-shield"
+        },
+        "subitems": []
+      },
+      "type": "equipment",
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.348",
+        "systemId": "pf2e",
+        "systemVersion": "7.5.2",
+        "lastModifiedBy": null
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 1900000,
+      "ownership": {
+        "default": 0,
+        "UPnjMbTUnpLyKVOr": 3
+      },
+      "flags": {},
+      "_id": "je65XqTKejUUSLQW",
+      "_key": "!actors.items!eAeSrRGMa1Ww6qZX.je65XqTKejUUSLQW"
+    },
+    {
+      "img": "icons/commodities/treasure/token-runed-os-grey.webp",
+      "name": "Dragon's Breath (5th Level Spell)",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>This rune depicts a specific type of dragon, resizing after application to fit the surface of the item.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">f</span> envision (spellshape)</p>\n<p><strong>Requirements</strong> You're receiving a bonus to AC from your <em>dragon's breath</em> cape or shield</p>\n<hr />\n<p><strong>Effect</strong> If your next action is to @UUID[Compendium.pf2e.actionspf2e.Item.aBQ8ajvEBByv45yz]{Cast a Spell} with an area of effect that deals the same type of damage as the depicted dragon's breath weapon, the spell gains the effects of the @UUID[Compendium.pf2e.feats-srd.Item.FoWO4RnHRwfEIC7Q]{Widen Spell} feat. The rune can only affect spells of 5th level or lower.</p>"
+        },
+        "rules": [],
+        "slug": "dragons-breath-5th-level-spell",
+        "_migration": {
+          "version": 0.943,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.943,
+            "foundry": "13.348",
+            "system": "7.5.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "magical"
+          ],
+          "rarity": "uncommon"
+        },
+        "publication": {
+          "title": "Pathfinder Lost Omens The Grand Bazaar",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 12
+        },
+        "quantity": 99,
+        "baseItem": null,
+        "bulk": {
+          "value": 0
+        },
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "price": {
+          "value": {
+            "gp": 2000
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "invested": null
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "applied-to-dueling-cape-or-shield"
+        },
+        "subitems": []
+      },
+      "type": "equipment",
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.348",
+        "systemId": "pf2e",
+        "systemVersion": "7.5.2",
+        "lastModifiedBy": null
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 2000000,
+      "ownership": {
+        "default": 0,
+        "UPnjMbTUnpLyKVOr": 3
+      },
+      "flags": {},
+      "_id": "5YuRHXkErWTCVFal",
+      "_key": "!actors.items!eAeSrRGMa1Ww6qZX.5YuRHXkErWTCVFal"
+    },
+    {
+      "img": "icons/commodities/treasure/token-runed-os-grey.webp",
+      "name": "Dragon's Breath (6th Level Spell)",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>This rune depicts a specific type of dragon, resizing after application to fit the surface of the item.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">f</span> envision (spellshape)</p>\n<p><strong>Requirements</strong> You're receiving a bonus to AC from your <em>dragon's breath</em> cape or shield</p>\n<hr />\n<p><strong>Effect</strong> If your next action is to @UUID[Compendium.pf2e.actionspf2e.Item.aBQ8ajvEBByv45yz]{Cast a Spell} with an area of effect that deals the same type of damage as the depicted dragon's breath weapon, the spell gains the effects of the @UUID[Compendium.pf2e.feats-srd.Item.FoWO4RnHRwfEIC7Q]{Widen Spell} feat. The rune can only affect spells of 6th level or lower.</p>"
+        },
+        "rules": [],
+        "slug": "dragons-breath-6th-level-spell",
+        "_migration": {
+          "version": 0.943,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.943,
+            "foundry": "13.348",
+            "system": "7.5.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "magical"
+          ],
+          "rarity": "uncommon"
+        },
+        "publication": {
+          "title": "Pathfinder Lost Omens The Grand Bazaar",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 14
+        },
+        "quantity": 99,
+        "baseItem": null,
+        "bulk": {
+          "value": 0
+        },
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "price": {
+          "value": {
+            "gp": 4500
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "invested": null
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "applied-to-dueling-cape-or-shield"
+        },
+        "subitems": []
+      },
+      "type": "equipment",
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.348",
+        "systemId": "pf2e",
+        "systemVersion": "7.5.2",
+        "lastModifiedBy": null
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 2100000,
+      "ownership": {
+        "default": 0,
+        "UPnjMbTUnpLyKVOr": 3
+      },
+      "flags": {},
+      "_id": "H85SW77Hm0KtSt7a",
+      "_key": "!actors.items!eAeSrRGMa1Ww6qZX.H85SW77Hm0KtSt7a"
+    },
+    {
+      "img": "icons/commodities/treasure/token-runed-os-grey.webp",
+      "name": "Dragon's Breath (7th Level Spell)",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>This rune depicts a specific type of dragon, resizing after application to fit the surface of the item.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">f</span> envision (spellshape)</p>\n<p><strong>Requirements</strong> You're receiving a bonus to AC from your <em>dragon's breath</em> cape or shield</p>\n<hr />\n<p><strong>Effect</strong> If your next action is to @UUID[Compendium.pf2e.actionspf2e.Item.aBQ8ajvEBByv45yz]{Cast a Spell} with an area of effect that deals the same type of damage as the depicted dragon's breath weapon, the spell gains the effects of the @UUID[Compendium.pf2e.feats-srd.Item.FoWO4RnHRwfEIC7Q]{Widen Spell} feat. The rune can only affect spells of 7th level or lower.</p>"
+        },
+        "rules": [],
+        "slug": "dragons-breath-7th-level-spell",
+        "_migration": {
+          "version": 0.943,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.943,
+            "foundry": "13.348",
+            "system": "7.5.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "magical"
+          ],
+          "rarity": "uncommon"
+        },
+        "publication": {
+          "title": "Pathfinder Lost Omens The Grand Bazaar",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 16
+        },
+        "quantity": 99,
+        "baseItem": null,
+        "bulk": {
+          "value": 0
+        },
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "price": {
+          "value": {
+            "gp": 10000
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "invested": null
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "applied-to-dueling-cape-or-shield"
+        },
+        "subitems": []
+      },
+      "type": "equipment",
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.348",
+        "systemId": "pf2e",
+        "systemVersion": "7.5.2",
+        "lastModifiedBy": null
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 2200000,
+      "ownership": {
+        "default": 0,
+        "UPnjMbTUnpLyKVOr": 3
+      },
+      "flags": {},
+      "_id": "axLnad2PwR4eAsre",
+      "_key": "!actors.items!eAeSrRGMa1Ww6qZX.axLnad2PwR4eAsre"
+    },
+    {
+      "img": "icons/commodities/treasure/token-runed-os-grey.webp",
+      "name": "Dragon's Breath (8th Level Spell)",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>This rune depicts a specific type of dragon, resizing after application to fit the surface of the item.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">f</span> envision (spellshape)</p>\n<p><strong>Requirements</strong> You're receiving a bonus to AC from your <em>dragon's breath</em> cape or shield</p>\n<hr />\n<p><strong>Effect</strong> If your next action is to @UUID[Compendium.pf2e.actionspf2e.Item.aBQ8ajvEBByv45yz]{Cast a Spell} with an area of effect that deals the same type of damage as the depicted dragon's breath weapon, the spell gains the effects of the @UUID[Compendium.pf2e.feats-srd.Item.FoWO4RnHRwfEIC7Q]{Widen Spell} feat. The rune can only affect spells of 8th level or lower.</p>"
+        },
+        "rules": [],
+        "slug": "dragons-breath-8th-level-spell",
+        "_migration": {
+          "version": 0.943,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.943,
+            "foundry": "13.348",
+            "system": "7.5.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "magical"
+          ],
+          "rarity": "uncommon"
+        },
+        "publication": {
+          "title": "Pathfinder Lost Omens The Grand Bazaar",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 18
+        },
+        "quantity": 99,
+        "baseItem": null,
+        "bulk": {
+          "value": 0
+        },
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "price": {
+          "value": {
+            "gp": 24000
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "invested": null
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "applied-to-dueling-cape-or-shield"
+        },
+        "subitems": []
+      },
+      "type": "equipment",
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.348",
+        "systemId": "pf2e",
+        "systemVersion": "7.5.2",
+        "lastModifiedBy": null
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 2300000,
+      "ownership": {
+        "default": 0,
+        "UPnjMbTUnpLyKVOr": 3
+      },
+      "flags": {},
+      "_id": "lxoHAOJsGF0gGcbe",
+      "_key": "!actors.items!eAeSrRGMa1Ww6qZX.lxoHAOJsGF0gGcbe"
+    },
+    {
+      "img": "icons/commodities/treasure/token-runed-os-grey.webp",
+      "name": "Dragon's Breath (9th Level Spell)",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>This rune depicts a specific type of dragon, resizing after application to fit the surface of the item.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">f</span> envision (spellshape)</p>\n<p><strong>Requirements</strong> You're receiving a bonus to AC from your <em>dragon's breath</em> cape or shield</p>\n<hr />\n<p><strong>Effect</strong> If your next action is to @UUID[Compendium.pf2e.actionspf2e.Item.aBQ8ajvEBByv45yz]{Cast a Spell} with an area of effect that deals the same type of damage as the depicted dragon's breath weapon, the spell gains the effects of the @UUID[Compendium.pf2e.feats-srd.Item.FoWO4RnHRwfEIC7Q]{Widen Spell} feat. The rune can only affect spells of 9th rank or lower.</p>"
+        },
+        "rules": [],
+        "slug": "dragons-breath-9th-level-spell",
+        "_migration": {
+          "version": 0.943,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.943,
+            "foundry": "13.348",
+            "system": "7.5.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "magical"
+          ],
+          "rarity": "uncommon"
+        },
+        "publication": {
+          "title": "Pathfinder Lost Omens The Grand Bazaar",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 20
+        },
+        "quantity": 99,
+        "baseItem": null,
+        "bulk": {
+          "value": 0
+        },
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "price": {
+          "value": {
+            "gp": 70000
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "invested": null
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "applied-to-dueling-cape-or-shield"
+        },
+        "subitems": []
+      },
+      "type": "equipment",
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.348",
+        "systemId": "pf2e",
+        "systemVersion": "7.5.2",
+        "lastModifiedBy": null
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 2400000,
+      "ownership": {
+        "default": 0,
+        "UPnjMbTUnpLyKVOr": 3
+      },
+      "flags": {},
+      "_id": "aYe99DO1HlXpvWlP",
+      "_key": "!actors.items!eAeSrRGMa1Ww6qZX.aYe99DO1HlXpvWlP"
+    },
+    {
+      "img": "icons/commodities/treasure/token-runed-os-grey.webp",
+      "name": "Paired (Greater)",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>These runes always come in pairs and can be applied to a garment's pockets to be activated.</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> command</p>\n<p><strong>Frequency</strong> once per day</p>\n<p><strong>Requirements</strong> The paired items are both invested, typically by two different characters, and are within 1 mile of each other</p>\n<hr />\n<p><strong>Effect</strong> Items in the pockets (up to 10 negligible Bulk items or 1 light Bulk item per pocket) trade places via teleportation.</p>"
+        },
+        "rules": [],
+        "slug": "paired-greater",
+        "_migration": {
+          "version": 0.943,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.943,
+            "foundry": "13.348",
+            "system": "7.5.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "magical",
+            "teleportation"
+          ],
+          "rarity": "uncommon"
+        },
+        "publication": {
+          "title": "Pathfinder Lost Omens The Grand Bazaar",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 9
+        },
+        "quantity": 99,
+        "baseItem": null,
+        "bulk": {
+          "value": 0
+        },
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "price": {
+          "value": {
+            "gp": 650
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "invested": null
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "each-rune-applied-to-a-separate-item-that-has-pockets"
+        },
+        "subitems": []
+      },
+      "type": "equipment",
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.348",
+        "systemId": "pf2e",
+        "systemVersion": "7.5.2",
+        "lastModifiedBy": null
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 1800000,
+      "ownership": {
+        "default": 0,
+        "UPnjMbTUnpLyKVOr": 3
+      },
+      "flags": {},
+      "_id": "dKNyARYiywgPERSn",
+      "_key": "!actors.items!eAeSrRGMa1Ww6qZX.dKNyARYiywgPERSn"
+    },
+    {
+      "img": "icons/commodities/treasure/token-runed-os-grey.webp",
+      "name": "Presentable (Greater)",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>A garment with this rune is always clean, as though it had just been affected by @UUID[Compendium.pf2e.spells-srd.Item.Qw3fnUlaUbnn7ipC]{Prestidigitation}. You gain a +2 item bonus to @UUID[Compendium.pf2e.actionspf2e.Item.OX4fy22hQgUHDr0q]{Make an Impression} on those who would be impressed by a particular <em>presentable</em> outfit while wearing this garment.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> envision, Interact</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> You cast @UUID[Compendium.pf2e.spells-srd.Item.qwlh6aDgi86U3Q7H]{Suggestion}.</p>"
+        },
+        "rules": [
+          {
+            "key": "FlatModifier",
+            "predicate": [
+              "action:make-an-impression"
+            ],
+            "selector": "diplomacy",
+            "type": "item",
+            "value": 2
+          }
+        ],
+        "slug": "presentable-greater",
+        "_migration": {
+          "version": 0.943,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.943,
+            "foundry": "13.348",
+            "system": "7.5.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "magical"
+          ],
+          "rarity": "uncommon"
+        },
+        "publication": {
+          "title": "Pathfinder Lost Omens The Grand Bazaar",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 10
+        },
+        "quantity": 99,
+        "baseItem": null,
+        "bulk": {
+          "value": 0
+        },
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "price": {
+          "value": {
+            "gp": 900
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "invested": null
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "applied-to-any-visible-article-of-clothing"
+        },
+        "subitems": []
+      },
+      "type": "equipment",
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.348",
+        "systemId": "pf2e",
+        "systemVersion": "7.5.2",
+        "lastModifiedBy": null
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 1950000,
+      "ownership": {
+        "default": 0,
+        "UPnjMbTUnpLyKVOr": 3
+      },
+      "flags": {},
+      "_id": "IqXNRyaxLq3Td1yY",
+      "_key": "!actors.items!eAeSrRGMa1Ww6qZX.IqXNRyaxLq3Td1yY"
+    },
+    {
+      "img": "icons/commodities/treasure/token-runed-os-grey.webp",
+      "name": "Paired (Major)",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>These runes always come in pairs and can be applied to a garment's pockets to be activated.</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> command</p>\n<p><strong>Frequency</strong> once per day</p>\n<p><strong>Requirements</strong> The paired items are both invested, typically by two different characters, and are on the same plane as each other</p>\n<hr />\n<p><strong>Effect</strong> Items in the pockets (up to 10 negligible Bulk items or 1 light Bulk item per pocket) trade places via teleportation.</p>"
+        },
+        "rules": [],
+        "slug": "paired-major",
+        "_migration": {
+          "version": 0.943,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.943,
+            "foundry": "13.348",
+            "system": "7.5.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "magical",
+            "teleportation"
+          ],
+          "rarity": "uncommon"
+        },
+        "publication": {
+          "title": "Pathfinder Lost Omens The Grand Bazaar",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 13
+        },
+        "quantity": 99,
+        "baseItem": null,
+        "bulk": {
+          "value": 0
+        },
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "price": {
+          "value": {
+            "gp": 2750
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "invested": null
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "each-rune-applied-to-a-separate-item-that-has-pockets"
+        },
+        "subitems": []
+      },
+      "type": "equipment",
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.348",
+        "systemId": "pf2e",
+        "systemVersion": "7.5.2",
+        "lastModifiedBy": null
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 2050000,
+      "ownership": {
+        "default": 0,
+        "UPnjMbTUnpLyKVOr": 3
+      },
+      "flags": {},
+      "_id": "COpJwd2Gw4mAmY2W",
+      "_key": "!actors.items!eAeSrRGMa1Ww6qZX.COpJwd2Gw4mAmY2W"
+    },
+    {
+      "img": "icons/commodities/treasure/token-runed-os-grey.webp",
+      "name": "Wind-Catcher (Greater)",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>This rune is invested by the captain or pilot of the vehicle. The vehicle gains a +10-foot item bonus to its Speed. If lack of wind prevents the vehicle from moving, it can still move at a Speed of 10 feet.</p>"
+        },
+        "rules": [],
+        "slug": "wind-catcher-greater",
+        "_migration": {
+          "version": 0.943,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.943,
+            "foundry": "13.348",
+            "system": "7.5.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "magical"
+          ],
+          "rarity": "uncommon"
+        },
+        "publication": {
+          "title": "Pathfinder Lost Omens The Grand Bazaar",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 14
+        },
+        "quantity": 99,
+        "baseItem": null,
+        "bulk": {
+          "value": 0
+        },
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "price": {
+          "value": {
+            "gp": 4250
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "invested": null
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "applied-to-a-wind-powered-vehicle"
+        },
+        "subitems": []
+      },
+      "type": "equipment",
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.348",
+        "systemId": "pf2e",
+        "systemVersion": "7.5.2",
+        "lastModifiedBy": null
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 2150000,
+      "ownership": {
+        "default": 0,
+        "UPnjMbTUnpLyKVOr": 3
+      },
+      "flags": {},
+      "_id": "OaPdzi2PYxB4P196",
+      "_key": "!actors.items!eAeSrRGMa1Ww6qZX.OaPdzi2PYxB4P196"
+    }
+  ],
+  "sort": 0,
+  "flags": {
+    "item-piles": {
+      "data": {
+        "enabled": true,
+        "type": "merchant",
+        "merchantColumns": [
+          {
+            "label": "Rarity",
+            "path": "system.traits.rarity",
+            "formatting": "{#}",
+            "buying": true,
+            "selling": true,
+            "mapping": {
+              "common": "PF2E.TraitCommon",
+              "uncommon": "PF2E.TraitUncommon",
+              "rare": "PF2E.TraitRare",
+              "unique": "PF2E.TraitUnique"
+            }
+          },
+          {
+            "label": "Level",
+            "path": "system.level.value",
+            "formatting": "{#}",
+            "mapping": {},
+            "buying": true,
+            "selling": true
+          },
+          {
+            "label": "Usage",
+            "path": "system.usage.value",
+            "formatting": "{#}",
+            "mapping": {
+              "applied-to-any-visible-article-of-clothing": "Visible Clothing",
+              "applied-to-a-basket-bag-or-other-container": "Container",
+              "applied-to-any-item-of-light-or-negligible-bulk": "Item of Light or Negligible Bulk",
+              "applied-to-belt-cape-cloak-or-scarf": "Cape, Cloak, or Scarf",
+              "applied-to-boots-cape-cloak-or-umbrella": "Boots, Cape, Cloak, or Umbrella",
+              "applied-to-dueling-cape-or-shield": "Dueling Cape or Shield",
+              "applied-to-footwear": "Footwear",
+              "each-rune-applied-to-a-separate-item-that-has-pockets": "Separate Items that have Pockets",
+              "applied-to-a-wind-powered-vehicle": "Wind Powered Vehicle"
+            },
+            "buying": true,
+            "selling": true
+          }
+        ],
+        "infiniteQuantity": true,
+        "hideTokenWhenClosed": true,
+        "distance": null
+      },
+      "version": "3.2.14"
+    },
+    "pf2e-toolbelt": {
+      "betterMerchant": {
+        "infiniteAll": true
+      }
+    }
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "pf2e-test",
+      "uuid": "Actor.eAeSrRGMa1Ww6qZX",
+      "coreVersion": "13.345",
+      "systemId": "pf2e",
+      "systemVersion": "7.2.0"
+    },
+    "coreVersion": "13.348",
+    "systemId": "pf2e",
+    "systemVersion": "7.5.2",
+    "createdTime": 1760023972900,
+    "modifiedTime": 1760023972900,
+    "lastModifiedBy": "UPnjMbTUnpLyKVOr"
+  },
+  "_key": "!actors!eAeSrRGMa1Ww6qZX"
+}

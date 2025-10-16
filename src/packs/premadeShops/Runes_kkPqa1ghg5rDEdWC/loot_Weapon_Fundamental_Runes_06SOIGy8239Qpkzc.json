@@ -1,0 +1,990 @@
+{
+  "name": "Weapon Fundamental Runes",
+  "type": "loot",
+  "ownership": {
+    "default": 1
+  },
+  "prototypeToken": {
+    "flags": {
+      "pf2e": {
+        "linkToActorSize": false,
+        "autoscale": false
+      }
+    },
+    "height": 1,
+    "width": 1,
+    "actorLink": true,
+    "sight": {
+      "enabled": false,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "name": "Weapon Fundamental Runes",
+    "displayName": 50,
+    "texture": {
+      "src": "icons/commodities/treasure/token-engraved-yellow-glowing.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "offsetX": 0,
+      "offsetY": 0,
+      "fit": "contain",
+      "scaleX": 1,
+      "scaleY": 1,
+      "rotation": 0,
+      "tint": "#ffffff",
+      "alphaThreshold": 0.75
+    },
+    "lockRotation": true,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "displayBars": 20,
+    "bar1": {
+      "attribute": "attributes.hp"
+    },
+    "bar2": {
+      "attribute": null
+    },
+    "light": {
+      "negative": false,
+      "priority": 0,
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "color": null,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "detectionModes": [],
+    "occludable": {
+      "radius": 0
+    },
+    "ring": {
+      "enabled": false,
+      "colors": {
+        "ring": null,
+        "background": null
+      },
+      "effects": 0,
+      "subject": {
+        "scale": 1,
+        "texture": null
+      }
+    },
+    "turnMarker": {
+      "mode": 1,
+      "animation": null,
+      "src": null,
+      "disposition": false
+    },
+    "movementAction": null,
+    "randomImg": false,
+    "appendNumber": false,
+    "prependAdjective": false
+  },
+  "effects": [],
+  "system": {
+    "_migration": {
+      "version": 0.943,
+      "previous": {
+        "schema": 0.943,
+        "foundry": "13.348",
+        "system": "7.5.2"
+      }
+    },
+    "details": {
+      "description": "",
+      "level": {
+        "value": 0
+      }
+    },
+    "lootSheetType": "Merchant",
+    "hiddenWhenEmpty": false
+  },
+  "_id": "06SOIGy8239Qpkzc",
+  "img": "icons/commodities/treasure/token-engraved-yellow-glowing.webp",
+  "items": [
+    {
+      "img": "systems/pf2e/icons/equipment/runes/fundamental-weapon-runes/striking.webp",
+      "name": "Striking",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>A <em>striking</em> rune stores destructive magic in the weapon, increasing the weapon damage dice it deals to two instead of one. For instance, a <em>+1 striking dagger</em> would deal 2d4 damage instead of 1d4 damage.</p>\n<p>You can upgrade the <em>striking</em> rune already etched on a weapon to a stronger version, increasing the values of the existing rune to those of the new rune. You must have the formula of the stronger rune to do so, and the Price of the upgrade is the difference between the two runes' Prices.</p>"
+        },
+        "rules": [],
+        "slug": "striking",
+        "_migration": {
+          "version": 0.943,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.943,
+            "foundry": "13.348",
+            "system": "7.5.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "magical"
+          ],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder GM Core",
+          "authors": "",
+          "license": "ORC",
+          "remaster": true
+        },
+        "level": {
+          "value": 4
+        },
+        "quantity": 99,
+        "baseItem": null,
+        "bulk": {
+          "value": 0
+        },
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "price": {
+          "value": {
+            "gp": 65
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "invested": null
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "Unusual Object",
+            "img": "systems/pf2e/icons/unidentified_item_icons/adventuring_gear.webp",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "etched-onto-a-weapon"
+        },
+        "subitems": []
+      },
+      "type": "equipment",
+      "_stats": {
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.DxCuJKynlnMQZHgp",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.348",
+        "systemId": "pf2e",
+        "systemVersion": "7.5.2",
+        "lastModifiedBy": null
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "UPnjMbTUnpLyKVOr": 3
+      },
+      "flags": {},
+      "_id": "Mox7uRJiBfzeu3Jh",
+      "_key": "!actors.items!06SOIGy8239Qpkzc.Mox7uRJiBfzeu3Jh"
+    },
+    {
+      "img": "systems/pf2e/icons/equipment/runes/fundamental-weapon-runes/striking.webp",
+      "name": "Striking (Greater)",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>A <em>striking</em> rune stores destructive magic in the weapon, increasing the weapon damage dice it deals to two instead of one. For instance, a <em>+1 striking dagger</em> would deal 2d4 damage instead of 1d4 damage.</p>\n<p>You can upgrade the <em>striking</em> rune already etched on a weapon to a stronger version, increasing the values of the existing rune to those of the new rune. You must have the formula of the stronger rune to do so, and the Price of the upgrade is the difference between the two runes' Prices.</p>\n<p>The weapon deals three weapon damage dice.</p>"
+        },
+        "rules": [],
+        "slug": "striking-greater",
+        "_migration": {
+          "version": 0.943,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.943,
+            "foundry": "13.348",
+            "system": "7.5.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "magical"
+          ],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder GM Core",
+          "authors": "",
+          "license": "ORC",
+          "remaster": true
+        },
+        "level": {
+          "value": 12
+        },
+        "quantity": 99,
+        "baseItem": null,
+        "bulk": {
+          "value": 0
+        },
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "price": {
+          "value": {
+            "gp": 1065
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "invested": null
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "etched-onto-a-weapon"
+        },
+        "subitems": []
+      },
+      "type": "equipment",
+      "_stats": {
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.KCQRFvUgbyclvOGi",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.348",
+        "systemId": "pf2e",
+        "systemVersion": "7.5.2",
+        "lastModifiedBy": null
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "UPnjMbTUnpLyKVOr": 3
+      },
+      "flags": {},
+      "_id": "HYgisn69ITI4bF0W",
+      "_key": "!actors.items!06SOIGy8239Qpkzc.HYgisn69ITI4bF0W"
+    },
+    {
+      "img": "systems/pf2e/icons/equipment/runes/fundamental-weapon-runes/striking.webp",
+      "name": "Striking (Major)",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>A <em>striking</em> rune stores destructive magic in the weapon, increasing the weapon damage dice it deals to two instead of one. For instance, a <em>+1 striking dagger</em> would deal 2d4 damage instead of 1d4 damage.</p>\n<p>You can upgrade the <em>striking</em> rune already etched on a weapon to a stronger version, increasing the values of the existing rune to those of the new rune. You must have the formula of the stronger rune to do so, and the Price of the upgrade is the difference between the two runes' Prices.</p>\n<p>The weapon deals four weapon damage dice.</p>"
+        },
+        "rules": [],
+        "slug": "striking-major",
+        "_migration": {
+          "version": 0.943,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.943,
+            "foundry": "13.348",
+            "system": "7.5.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "magical"
+          ],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder GM Core",
+          "authors": "",
+          "license": "ORC",
+          "remaster": true
+        },
+        "level": {
+          "value": 19
+        },
+        "quantity": 99,
+        "baseItem": null,
+        "bulk": {
+          "value": 0
+        },
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "price": {
+          "value": {
+            "gp": 31065
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "invested": null
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "etched-onto-a-weapon"
+        },
+        "subitems": []
+      },
+      "type": "equipment",
+      "_stats": {
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.woxl2FrrgAcJDu0t",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.348",
+        "systemId": "pf2e",
+        "systemVersion": "7.5.2",
+        "lastModifiedBy": null
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "UPnjMbTUnpLyKVOr": 3
+      },
+      "flags": {},
+      "_id": "7fgAs9ny2zRnVTkv",
+      "_key": "!actors.items!06SOIGy8239Qpkzc.7fgAs9ny2zRnVTkv"
+    },
+    {
+      "img": "systems/pf2e/icons/equipment/runes/fundamental-weapon-runes/striking.webp",
+      "name": "Mythic Striking",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>This weapon is filled with unmatched destructive power. The weapon deals five weapon damage dice.</p><hr /><p><strong>Activate—Unstoppable Devastation</strong> <span class=\"action-glyph\">r</span> (concentration)</p>\n<p><strong>Trigger</strong> You roll the weapon damage dice for a Strike with this weapon and do not like the result</p>\n<p><strong>Effect</strong> Spend a Mythic Point and reroll your weapon damage dice, taking the higher of the two results.</p><hr /><p><strong>Craft Requirements</strong> <em>Mythic striking</em> runes can only be crafted, etched, or transferred by a mythic character capable of making a Crafting check at mythic proficiency (such as by having the Artisan's Calling).</p>"
+        },
+        "rules": [],
+        "slug": "mythic-striking",
+        "_migration": {
+          "version": 0.943,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.943,
+            "foundry": "13.348",
+            "system": "7.5.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "magical",
+            "mythic"
+          ],
+          "rarity": "rare"
+        },
+        "publication": {
+          "title": "Pathfinder War of Immortals",
+          "authors": "",
+          "license": "ORC",
+          "remaster": true
+        },
+        "level": {
+          "value": 20
+        },
+        "quantity": 99,
+        "baseItem": null,
+        "bulk": {
+          "value": 0
+        },
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "price": {
+          "value": {
+            "gp": 70000
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "invested": null
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "etched-onto-a-weapon"
+        },
+        "subitems": []
+      },
+      "type": "equipment",
+      "_stats": {
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.OIvT5kbtYWcRc1k2",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.348",
+        "systemId": "pf2e",
+        "systemVersion": "7.5.2",
+        "lastModifiedBy": null
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "UPnjMbTUnpLyKVOr": 3
+      },
+      "flags": {},
+      "_id": "8IwDQgFJ8ao3oxWJ",
+      "_key": "!actors.items!06SOIGy8239Qpkzc.8IwDQgFJ8ao3oxWJ"
+    },
+    {
+      "img": "systems/pf2e/icons/equipment/runes/fundamental-weapon-runes/weapon-potency.webp",
+      "name": "Weapon Potency (+1)",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>Magical enhancements make this weapon strike true. Attack rolls with this weapon gain a +1 item bonus, and the weapon can be etched with one property rune.</p>\n<p>You can upgrade the <em>weapon potency</em> rune already etched on a weapon to a stronger version, increasing the values of the existing rune to those of the new rune. You must have the formula of the stronger rune to do so, and the Price of the upgrade is the difference between the two runes' Prices.</p>\n<p><strong>Craft Requirements</strong> You are an expert in Crafting.</p>"
+        },
+        "rules": [],
+        "slug": "weapon-potency-1",
+        "_migration": {
+          "version": 0.943,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.943,
+            "foundry": "13.348",
+            "system": "7.5.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "magical"
+          ],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder GM Core",
+          "authors": "",
+          "license": "ORC",
+          "remaster": true
+        },
+        "level": {
+          "value": 2
+        },
+        "quantity": 99,
+        "baseItem": null,
+        "bulk": {
+          "value": 0
+        },
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "price": {
+          "value": {
+            "gp": 35
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "invested": null
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "Unusual Object",
+            "img": "systems/pf2e/icons/unidentified_item_icons/adventuring_gear.webp",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "etched-onto-a-weapon"
+        },
+        "subitems": []
+      },
+      "type": "equipment",
+      "_stats": {
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.DKWuJb2rSgiotOG7",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.348",
+        "systemId": "pf2e",
+        "systemVersion": "7.5.2",
+        "lastModifiedBy": null
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "UPnjMbTUnpLyKVOr": 3
+      },
+      "flags": {},
+      "_id": "AV52xxGMHqwX6P8B",
+      "_key": "!actors.items!06SOIGy8239Qpkzc.AV52xxGMHqwX6P8B"
+    },
+    {
+      "img": "systems/pf2e/icons/equipment/runes/fundamental-weapon-runes/weapon-potency.webp",
+      "name": "Weapon Potency (+2)",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>Magical enhancements make this weapon strike true. Attack rolls with this weapon gain a +2 item bonus, and the weapon can be etched with two property rune.</p>\n<p>You can upgrade the <em>weapon potency</em> rune already etched on a weapon to a stronger version, increasing the values of the existing rune to those of the new rune. You must have the formula of the stronger rune to do so, and the Price of the upgrade is the difference between the two runes' Prices.</p>\n<p><strong>Craft Requirements</strong> You are a master in Crafting.</p>"
+        },
+        "rules": [],
+        "slug": "weapon-potency-2",
+        "_migration": {
+          "version": 0.943,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.943,
+            "foundry": "13.348",
+            "system": "7.5.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "magical"
+          ],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder GM Core",
+          "authors": "",
+          "license": "ORC",
+          "remaster": true
+        },
+        "level": {
+          "value": 10
+        },
+        "quantity": 99,
+        "baseItem": null,
+        "bulk": {
+          "value": 0
+        },
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "price": {
+          "value": {
+            "gp": 935
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "invested": null
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "Unusual Object",
+            "img": "systems/pf2e/icons/unidentified_item_icons/adventuring_gear.webp",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "etched-onto-a-weapon"
+        },
+        "subitems": []
+      },
+      "type": "equipment",
+      "_stats": {
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.pOoEiuEuITm4I2Il",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.348",
+        "systemId": "pf2e",
+        "systemVersion": "7.5.2",
+        "lastModifiedBy": null
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "UPnjMbTUnpLyKVOr": 3
+      },
+      "flags": {},
+      "_id": "wkc0t5WieJmn4wUX",
+      "_key": "!actors.items!06SOIGy8239Qpkzc.wkc0t5WieJmn4wUX"
+    },
+    {
+      "img": "systems/pf2e/icons/equipment/runes/fundamental-weapon-runes/weapon-potency.webp",
+      "name": "Weapon Potency (+3)",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>Magical enhancements make this weapon strike true. Attack rolls with this weapon gain a +3 item bonus, and the weapon can be etched with three property rune.</p>\n<p>You can upgrade the <em>weapon potency</em> rune already etched on a weapon to a stronger version, increasing the values of the existing rune to those of the new rune. You must have the formula of the stronger rune to do so, and the Price of the upgrade is the difference between the two runes' Prices.</p>\n<p><strong>Craft Requirements</strong> You are legendary in Crafting.</p>"
+        },
+        "rules": [],
+        "slug": "weapon-potency-3",
+        "_migration": {
+          "version": 0.943,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.943,
+            "foundry": "13.348",
+            "system": "7.5.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "magical"
+          ],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder GM Core",
+          "authors": "",
+          "license": "ORC",
+          "remaster": true
+        },
+        "level": {
+          "value": 16
+        },
+        "quantity": 99,
+        "baseItem": null,
+        "bulk": {
+          "value": 0
+        },
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "price": {
+          "value": {
+            "gp": 8935
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "invested": null
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "etched-onto-a-weapon"
+        },
+        "subitems": []
+      },
+      "type": "equipment",
+      "_stats": {
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.rvItjGQaYT7Luwtm",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.348",
+        "systemId": "pf2e",
+        "systemVersion": "7.5.2",
+        "lastModifiedBy": null
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "UPnjMbTUnpLyKVOr": 3
+      },
+      "flags": {},
+      "_id": "5TR3GXvyOwiouh05",
+      "_key": "!actors.items!06SOIGy8239Qpkzc.5TR3GXvyOwiouh05"
+    },
+    {
+      "img": "systems/pf2e/icons/equipment/runes/fundamental-weapon-runes/weapon-potency.webp",
+      "name": "Mythic Weapon Potency",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>This weapon strikes with peerless accuracy to pierce the defenses of the mightiest monstrosities. Attack rolls with this weapon gain a +4 item bonus, and the weapon can be etched with four property runes.</p><hr /><p><strong>Activate—Unerring Blow</strong> <span class=\"action-glyph\">r</span> (concentration)</p>\n<p><strong>Trigger</strong> You roll an attack roll to Strike with this weapon and receive a critical failure</p>\n<p><strong>Effect</strong> Spend a Mythic Point and reroll your attack roll with mythic proficiency, taking the higher of the two results.</p><hr /><p><strong>Craft Requirements</strong> <em>Mythic weapon</em> potency runes can only be crafted, etched, or transferred by a mythic character capable of making a Crafting check at mythic proficiency (such as by having the Artisan's Calling).</p>"
+        },
+        "rules": [],
+        "slug": "mythic-weapon-potency",
+        "_migration": {
+          "version": 0.943,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.943,
+            "foundry": "13.348",
+            "system": "7.5.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "magical",
+            "mythic"
+          ],
+          "rarity": "rare"
+        },
+        "publication": {
+          "title": "Pathfinder War of Immortals",
+          "authors": "",
+          "license": "ORC",
+          "remaster": true
+        },
+        "level": {
+          "value": 20
+        },
+        "quantity": 99,
+        "baseItem": null,
+        "bulk": {
+          "value": 0
+        },
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "price": {
+          "value": {
+            "gp": 70000
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "invested": null
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "etched-onto-a-weapon"
+        },
+        "subitems": []
+      },
+      "type": "equipment",
+      "_stats": {
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.p1oT9B3kdPGJUy3u",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.348",
+        "systemId": "pf2e",
+        "systemVersion": "7.5.2",
+        "lastModifiedBy": null
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "UPnjMbTUnpLyKVOr": 3
+      },
+      "flags": {},
+      "_id": "cVIJJohKf9tyLqUf",
+      "_key": "!actors.items!06SOIGy8239Qpkzc.cVIJJohKf9tyLqUf"
+    }
+  ],
+  "folder": "kkPqa1ghg5rDEdWC",
+  "sort": 400000,
+  "flags": {
+    "item-piles": {
+      "data": {
+        "enabled": true,
+        "type": "merchant",
+        "merchantColumns": [
+          {
+            "label": "Rarity",
+            "path": "system.traits.rarity",
+            "formatting": "{#}",
+            "buying": true,
+            "selling": true,
+            "mapping": {
+              "common": "PF2E.TraitCommon",
+              "uncommon": "PF2E.TraitUncommon",
+              "rare": "PF2E.TraitRare",
+              "unique": "PF2E.TraitUnique"
+            }
+          },
+          {
+            "label": "Level",
+            "path": "system.level.value",
+            "formatting": "{#}",
+            "mapping": {},
+            "buying": true,
+            "selling": true
+          },
+          {
+            "label": "Usage",
+            "path": "system.usage.value",
+            "formatting": "{#}",
+            "mapping": {
+              "etched-onto-a-weapon": "Weapon"
+            },
+            "buying": true,
+            "selling": true
+          }
+        ],
+        "infiniteQuantity": true,
+        "hideNewItems": true,
+        "hideTokenWhenClosed": true,
+        "distance": null,
+        "displayQuantity": "no"
+      },
+      "version": "3.2.15",
+      "sharing": {}
+    },
+    "pf2e-toolbelt": {
+      "betterMerchant": {
+        "infiniteAll": true
+      }
+    }
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.348",
+    "systemId": "pf2e",
+    "systemVersion": "7.5.2",
+    "createdTime": 1760023972900,
+    "modifiedTime": 1760023972900,
+    "lastModifiedBy": "UPnjMbTUnpLyKVOr"
+  },
+  "_key": "!actors!06SOIGy8239Qpkzc"
+}

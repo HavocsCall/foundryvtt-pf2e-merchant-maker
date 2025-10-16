@@ -1,0 +1,788 @@
+{
+  "name": "Shield Fundamental Runes",
+  "type": "loot",
+  "ownership": {
+    "default": 1
+  },
+  "prototypeToken": {
+    "flags": {
+      "pf2e": {
+        "linkToActorSize": false,
+        "autoscale": false
+      }
+    },
+    "height": 1,
+    "width": 1,
+    "actorLink": true,
+    "sight": {
+      "enabled": false,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "name": "Shield Fundamental Runes",
+    "displayName": 50,
+    "texture": {
+      "src": "icons/commodities/treasure/token-runed-circles-grey.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "offsetX": 0,
+      "offsetY": 0,
+      "fit": "contain",
+      "scaleX": 1,
+      "scaleY": 1,
+      "rotation": 0,
+      "tint": "#ffffff",
+      "alphaThreshold": 0.75
+    },
+    "lockRotation": true,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "displayBars": 20,
+    "bar1": {
+      "attribute": "attributes.hp"
+    },
+    "bar2": {
+      "attribute": null
+    },
+    "light": {
+      "negative": false,
+      "priority": 0,
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "color": null,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "detectionModes": [],
+    "occludable": {
+      "radius": 0
+    },
+    "ring": {
+      "enabled": false,
+      "colors": {
+        "ring": null,
+        "background": null
+      },
+      "effects": 0,
+      "subject": {
+        "scale": 1,
+        "texture": null
+      }
+    },
+    "turnMarker": {
+      "mode": 1,
+      "animation": null,
+      "src": null,
+      "disposition": false
+    },
+    "movementAction": null,
+    "randomImg": false,
+    "appendNumber": false,
+    "prependAdjective": false
+  },
+  "effects": [],
+  "system": {
+    "_migration": {
+      "version": 0.943,
+      "previous": {
+        "schema": 0.943,
+        "foundry": "13.348",
+        "system": "7.5.2"
+      }
+    },
+    "details": {
+      "description": "",
+      "level": {
+        "value": 0
+      }
+    },
+    "lootSheetType": "Merchant",
+    "hiddenWhenEmpty": false
+  },
+  "_id": "SvsymcJXHS0wUZrY",
+  "img": "icons/commodities/treasure/token-runed-circles-grey.webp",
+  "items": [
+    {
+      "img": "icons/commodities/treasure/token-runed-os-grey.webp",
+      "name": "Reinforcing Rune (Minor)",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>Reinforcing runes make a shield significantly more durable, allowing it to effectively block more powerful attacks.</p>\n<hr />\n<p>The shield's Hardness increases by 3, it gains an additional 44 Hit Points, and its BT increases by 22 (maximum 8 Hardness, 64 HP, and 32 BT).</p>"
+        },
+        "rules": [],
+        "slug": "reinforcing-rune-minor",
+        "_migration": {
+          "version": 0.943,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.943,
+            "foundry": "13.348",
+            "system": "7.5.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "magical"
+          ],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder GM Core",
+          "authors": "",
+          "license": "ORC",
+          "remaster": true
+        },
+        "level": {
+          "value": 4
+        },
+        "quantity": 99,
+        "baseItem": null,
+        "bulk": {
+          "value": 0
+        },
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "price": {
+          "value": {
+            "gp": 75
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "invested": null
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "etched-onto-a-shield"
+        },
+        "subitems": []
+      },
+      "type": "equipment",
+      "_stats": {
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.x9SNVpAAnXKJeoqp",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.348",
+        "systemId": "pf2e",
+        "systemVersion": "7.5.2",
+        "lastModifiedBy": null
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "UPnjMbTUnpLyKVOr": 3
+      },
+      "flags": {},
+      "_id": "GR7gRvjP5sXpGzAs",
+      "_key": "!actors.items!SvsymcJXHS0wUZrY.GR7gRvjP5sXpGzAs"
+    },
+    {
+      "img": "icons/commodities/treasure/token-runed-os-grey.webp",
+      "name": "Reinforcing Rune (Lesser)",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>Reinforcing runes make a shield significantly more durable, allowing it to effectively block more powerful attacks.</p>\n<hr />\n<p>The shield's Hardness increases by 3, it gains an additional 52 Hit Points, and its BT increases by 26 (maximum 10 Hardness, 80 HP, and 40 BT).</p>"
+        },
+        "rules": [],
+        "slug": "reinforcing-rune-lesser",
+        "_migration": {
+          "version": 0.943,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.943,
+            "foundry": "13.348",
+            "system": "7.5.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "magical"
+          ],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder GM Core",
+          "authors": "",
+          "license": "ORC",
+          "remaster": true
+        },
+        "level": {
+          "value": 7
+        },
+        "quantity": 99,
+        "baseItem": null,
+        "bulk": {
+          "value": 0
+        },
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "price": {
+          "value": {
+            "gp": 300
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "invested": null
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "etched-onto-a-shield"
+        },
+        "subitems": []
+      },
+      "type": "equipment",
+      "_stats": {
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.o65PFCSOyMje6fwi",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.348",
+        "systemId": "pf2e",
+        "systemVersion": "7.5.2",
+        "lastModifiedBy": null
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "UPnjMbTUnpLyKVOr": 3
+      },
+      "flags": {},
+      "_id": "3amZAvwQOeSo1OVm",
+      "_key": "!actors.items!SvsymcJXHS0wUZrY.3amZAvwQOeSo1OVm"
+    },
+    {
+      "img": "icons/commodities/treasure/token-runed-os-grey.webp",
+      "name": "Reinforcing Rune (Moderate)",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>Reinforcing runes make a shield significantly more durable, allowing it to effectively block more powerful attacks.</p>\n<hr />\n<p>The shield's Hardness increases by 3, it gains an additional 64 Hit Points, and its BT increases by 32 (maximum 13 Hardness, 104 HP, and 52 BT).</p>"
+        },
+        "rules": [],
+        "slug": "reinforcing-rune-moderate",
+        "_migration": {
+          "version": 0.943,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.943,
+            "foundry": "13.348",
+            "system": "7.5.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "magical"
+          ],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder GM Core",
+          "authors": "",
+          "license": "ORC",
+          "remaster": true
+        },
+        "level": {
+          "value": 10
+        },
+        "quantity": 99,
+        "baseItem": null,
+        "bulk": {
+          "value": 0
+        },
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "price": {
+          "value": {
+            "gp": 900
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "invested": null
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "etched-onto-a-shield"
+        },
+        "subitems": []
+      },
+      "type": "equipment",
+      "_stats": {
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.bvROhtzAez0KP7Vt",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.348",
+        "systemId": "pf2e",
+        "systemVersion": "7.5.2",
+        "lastModifiedBy": null
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "UPnjMbTUnpLyKVOr": 3
+      },
+      "flags": {},
+      "_id": "uHqQW3tYq43Ua7w5",
+      "_key": "!actors.items!SvsymcJXHS0wUZrY.uHqQW3tYq43Ua7w5"
+    },
+    {
+      "img": "icons/commodities/treasure/token-runed-os-grey.webp",
+      "name": "Reinforcing Rune (Greater)",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>Reinforcing runes make a shield significantly more durable, allowing it to effectively block more powerful attacks.</p><hr /><p>The shield's Hardness increases by 5, it gains an additional 80 Hit Points, and its BT increases by 40 (maximum 15 Hardness, 120 HP, and 60 BT).</p>"
+        },
+        "rules": [],
+        "slug": "reinforcing-rune-greater",
+        "_migration": {
+          "version": 0.943,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.943,
+            "foundry": "13.348",
+            "system": "7.5.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "magical"
+          ],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder GM Core",
+          "authors": "",
+          "license": "ORC",
+          "remaster": true
+        },
+        "level": {
+          "value": 13
+        },
+        "quantity": 99,
+        "baseItem": null,
+        "bulk": {
+          "value": 0
+        },
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "price": {
+          "value": {
+            "gp": 2500
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "invested": null
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "etched-onto-a-shield"
+        },
+        "subitems": []
+      },
+      "type": "equipment",
+      "_stats": {
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.vT1LG3uNuCCnZhPq",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.348",
+        "systemId": "pf2e",
+        "systemVersion": "7.5.2",
+        "lastModifiedBy": null
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "UPnjMbTUnpLyKVOr": 3
+      },
+      "flags": {},
+      "_id": "5HpkjlUI9VHLBVtK",
+      "_key": "!actors.items!SvsymcJXHS0wUZrY.5HpkjlUI9VHLBVtK"
+    },
+    {
+      "img": "icons/commodities/treasure/token-runed-os-grey.webp",
+      "name": "Reinforcing Rune (Major)",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>Reinforcing runes make a shield significantly more durable, allowing it to effectively block more powerful attacks.</p>\n<hr />\n<p>The shield's Hardness increases by 5, it gains an additional 84 Hit Points, and its BT increases by 42 (maximum 17 Hardness, 136 HP, and 68 BT).</p>"
+        },
+        "rules": [],
+        "slug": "reinforcing-rune-major",
+        "_migration": {
+          "version": 0.943,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.943,
+            "foundry": "13.348",
+            "system": "7.5.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "magical"
+          ],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder GM Core",
+          "authors": "",
+          "license": "ORC",
+          "remaster": true
+        },
+        "level": {
+          "value": 16
+        },
+        "quantity": 99,
+        "baseItem": null,
+        "bulk": {
+          "value": 0
+        },
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "price": {
+          "value": {
+            "gp": 8000
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "invested": null
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "Unusual Object",
+            "img": "systems/pf2e/icons/unidentified_item_icons/adventuring_gear.webp",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "etched-onto-a-shield"
+        },
+        "subitems": []
+      },
+      "type": "equipment",
+      "_stats": {
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.1Nhc0C2gdJvIM7Mv",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.348",
+        "systemId": "pf2e",
+        "systemVersion": "7.5.2",
+        "lastModifiedBy": null
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "UPnjMbTUnpLyKVOr": 3
+      },
+      "flags": {},
+      "_id": "FbWDlTeHZ6IZAadz",
+      "_key": "!actors.items!SvsymcJXHS0wUZrY.FbWDlTeHZ6IZAadz"
+    },
+    {
+      "img": "icons/commodities/treasure/token-runed-os-grey.webp",
+      "name": "Reinforcing Rune (Supreme)",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>Reinforcing runes make a shield significantly more durable, allowing it to effectively block more powerful attacks.</p>\n<hr />\n<p>The shield's Hardness increases by 7, it gains an additional 108 Hit Points, and its BT increases by 54 (maximum 20 Hardness, 160 HP, and 80 BT).</p>"
+        },
+        "rules": [],
+        "slug": "reinforcing-rune-supreme",
+        "_migration": {
+          "version": 0.943,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.943,
+            "foundry": "13.348",
+            "system": "7.5.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "magical"
+          ],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder GM Core",
+          "authors": "",
+          "license": "ORC",
+          "remaster": true
+        },
+        "level": {
+          "value": 19
+        },
+        "quantity": 99,
+        "baseItem": null,
+        "bulk": {
+          "value": 0
+        },
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "price": {
+          "value": {
+            "gp": 32000
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "invested": null
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "etched-onto-a-shield"
+        },
+        "subitems": []
+      },
+      "type": "equipment",
+      "_stats": {
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.0iPTcAgtbtMj6Lwn",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.348",
+        "systemId": "pf2e",
+        "systemVersion": "7.5.2",
+        "lastModifiedBy": null
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "UPnjMbTUnpLyKVOr": 3
+      },
+      "flags": {},
+      "_id": "iPC811xcCmWmlFlI",
+      "_key": "!actors.items!SvsymcJXHS0wUZrY.iPC811xcCmWmlFlI"
+    }
+  ],
+  "folder": "kkPqa1ghg5rDEdWC",
+  "sort": 300000,
+  "flags": {
+    "item-piles": {
+      "data": {
+        "enabled": true,
+        "type": "merchant",
+        "merchantColumns": [
+          {
+            "label": "Rarity",
+            "path": "system.traits.rarity",
+            "formatting": "{#}",
+            "buying": true,
+            "selling": true,
+            "mapping": {
+              "common": "PF2E.TraitCommon",
+              "uncommon": "PF2E.TraitUncommon",
+              "rare": "PF2E.TraitRare",
+              "unique": "PF2E.TraitUnique"
+            }
+          },
+          {
+            "label": "Level",
+            "path": "system.level.value",
+            "formatting": "{#}",
+            "mapping": {},
+            "buying": true,
+            "selling": true
+          },
+          {
+            "label": "Usage",
+            "path": "system.usage.value",
+            "formatting": "{#}",
+            "mapping": {
+              "etched-onto-a-shield": "Shield",
+              "applied-to-shield": "Shield"
+            },
+            "buying": true,
+            "selling": true
+          }
+        ],
+        "infiniteQuantity": true,
+        "hideTokenWhenClosed": true,
+        "distance": null
+      },
+      "version": "3.2.14"
+    },
+    "pf2e-toolbelt": {
+      "betterMerchant": {
+        "infiniteAll": true
+      }
+    }
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.348",
+    "systemId": "pf2e",
+    "systemVersion": "7.5.2",
+    "createdTime": 1760023972900,
+    "modifiedTime": 1760023972900,
+    "lastModifiedBy": "UPnjMbTUnpLyKVOr"
+  },
+  "_key": "!actors!SvsymcJXHS0wUZrY"
+}
