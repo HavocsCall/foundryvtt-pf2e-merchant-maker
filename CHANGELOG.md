@@ -1,3 +1,8 @@
+# 1.3.1
+## Changed
+- The Folder color to a darker shade
+---
+---
 # 1.3.0
 ## Added
 - Quantity options to set the quantity for each item in the merchant
@@ -6,7 +11,7 @@
     - Runes Merchants
 - Setup for additional compendiums
 - Excluded more non-obtainable items
-- Changed the folder structure to try to seem more profesional
+- Changed the folder structure to try to seem more professional
 ---
 ---
 # 1.2.0
