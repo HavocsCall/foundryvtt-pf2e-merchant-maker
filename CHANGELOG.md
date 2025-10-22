@@ -1,6 +1,6 @@
 # 1.4.0
 ## Changed
-- Moved Quanity and Amount options to a new tab
+- Moved Quantity and Amount options to a new tab
 ---
 ---
 # 1.3.2
