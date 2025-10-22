@@ -1,3 +1,13 @@
+# 1.4.0
+## Changed
+- Moved Quantity and Amount options to a new tab
+---
+---
+# 1.3.2
+## Changed
+- Turned off debug because I forgot
+---
+---
 # 1.3.1
 ## Changed
 - The Folder color to a darker shade

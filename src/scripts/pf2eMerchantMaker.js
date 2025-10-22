@@ -258,22 +258,44 @@ class pf2eLootMerchantMaker extends HandlebarsApplicationMixin(ApplicationV2) {
     };
 
     static PARTS = {
-        form: { template: "modules/foundryvtt-pf2e-merchant-maker/src/templates/pf2eMerchantMaker.hbs" },
+        tabs: { template: "templates/generic/tab-navigation.hbs" },
+        merchantMaker: { template: "modules/foundryvtt-pf2e-merchant-maker/src/templates/pf2eMerchantMaker.hbs" },
+        advancedOptions: { template: "modules/foundryvtt-pf2e-merchant-maker/src/templates/advancedOptions.hbs" },
         footer: { template: "templates/generic/form-footer.hbs" }
     };
 
-    async _prepareContext(options) {
-        const context = await super._prepareContext(options);
+    static TABS = {
+        primary: {
+            tabs: [
+                { id: "merchantMaker", label: "pf2eMerchantMaker.name" },
+                { id: "advancedOptions", label: "pf2eMerchantMaker.window.advancedOptions" }
+            ],
+            initial: "merchantMaker"
+        }
+    };
 
-        context.buttons = [
-            { type: "submit", label: game.i18n.localize("pf2eMerchantMaker.window.submit"), icon: "fa-solid fa-hand-holding-dollar" },
-            { type: "reset", label: game.i18n.localize("pf2eMerchantMaker.window.reset"), icon: "fa-solid fa-arrow-rotate-left" }
-        ];
-
-        context.criteria = window.criteria;
-
+    async _preparePartContext(partId, context) {
+        switch (partId) {
+            case 'merchantMaker':
+            case 'advancedOptions':
+                context.tab = context.tabs[partId];
+                break;
+            default:
+        }
         return context;
-    }
+    };
+
+    async _prepareContext(options) {
+        const context = {
+            tabs: this._prepareTabs("primary"),
+            buttons: [
+                { type: "submit", label: "pf2eMerchantMaker.window.submit", icon: "fa-solid fa-hand-holding-dollar" },
+                { type: "reset", label: "pf2eMerchantMaker.window.reset", icon: "fa-solid fa-arrow-rotate-left" }
+            ],
+            criteria: window.criteria
+        }
+        return context;
+    };
 
     // ---------- Form Handler ---------- //
     static async pf2eLootMerchantMakerFormHandler(event, form, formData) {
