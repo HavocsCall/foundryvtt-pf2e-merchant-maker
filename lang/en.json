@@ -26,6 +26,7 @@
       }
     },
     "window": {
+      "advancedOptions": "Advanced Options",
       "allAmount": "All items that match",
       "amountTip": "Control how many unique items are returned.",
       "criteriaTip": "Tip: Hold <strong>Ctrl</strong> (or <strong>Cmd</strong> on Mac) to select multiple options. Hold <strong>Shift</strong> to select a range.",
@@ -46,7 +47,7 @@
       "itemAmounts": "Item Amounts",
       "merchantName": "Merchant Name",
       "merchantPlaceholder": "Enter Merchant Name",
-      "quantityOptions": "Quantity Options",
+      "quantityOptions": "Quantity per Item",
       "quantityTip": "Choose how many of each matching item.",
       "randomAmount": "Random Amount of Random Items",
       "randomQuantity": "Random Quantity (1-99) per item",
